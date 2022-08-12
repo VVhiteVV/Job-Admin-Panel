@@ -1,0 +1,222 @@
+.sideBar-menu {
+  width: 255px;
+  min-height: 100vh;
+  background-color: var(--black-light);
+}
+.sideBar-menu__inner img {
+  margin: 22px 0px 0px 22px;
+}
+.sideBar-menu__menu {
+  margin-top: 21px;
+}
+.sideBar-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.sideBar-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0px 16px 30px;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+.sideBar-menu__item a {
+  color: var(--white);
+}
+.sideBar-menu__item-active {
+  border-left: 3px solid white;
+}
+.sideBar-menu__item:hover {
+  background-color: var(--black-hover);
+}
+
+.Main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 30px 10px 30px;
+}
+.Main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+}
+.Main__top-right, .Main__top-right-info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.Main__top-right-border {
+  border-left: 1px solid var(--black-light);
+  height: 34px;
+}
+.Main__top-right-user-name {
+  width: 190px;
+}
+.Main__top-right-user-name span:last-child {
+  color: var(--gray);
+}
+.Main__content {
+  margin-top: 69px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #DFE0EB;
+}
+.Main__content-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px 42px 30px;
+}
+.Main__content-top-search {
+  display: flex;
+}
+.Main__content-top-search > div {
+  width: 224px;
+  position: relative;
+}
+.Main__content-top-search > div input {
+  width: 100%;
+  background-image: url("../../../public/search.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.Main__content-table {
+  width: 100%;
+}
+.Main__content-table table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  padding-left: 30px;
+}
+.Main__content-table table th {
+  color: var(--gray);
+}
+.Main__content-table table td, .Main__content-table table th {
+  border-bottom: 1px solid #DFE0EB;
+}
+.Main__content-table table tr {
+  height: 91px;
+}
+.Main__content-table table tr:hover {
+  background-color: #F7F8FF;
+  cursor: pointer;
+}
+.Main__content-table table td:nth-child(1), .Main__content-table table td:nth-child(2) {
+  font-weight: 500;
+}
+
+:root {
+  --black-light: #363740;
+  --black:#252733;
+  --black-hover:#3E4049;
+  --white: #F7F8FC;
+  --gray:#9FA2B4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Geometria";
+  width: 100%;
+  color: var(--black);
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria"), url("../fonts/Geometria-Regular.ttf") format("truetype"), url("../fonts/Geometria-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria"), url("../fonts/Geometria-Medium.ttf") format("truetype"), url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+input {
+  border: 1px solid #EBEDF0;
+  border-radius: 8px;
+  color: #C5C7CD;
+  padding-left: 16px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.span-12 {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.span-14 {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.span-16 {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.span-20 {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.span-24 {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=global.css.map */
