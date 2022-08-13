@@ -6,6 +6,9 @@
   --black-hover:#3E4049;
   --white: #F7F8FC;
   --gray:#9FA2B4;
+  --gray-light:#b5b8c4;
+  --blue: #315EFB;
+  --green:#21A366;
 }
 body{
   margin: 0;
@@ -56,17 +59,28 @@ h1,h2,h3,h4{
 }
 
 input{
-
   border: 1px solid #EBEDF0;
   border-radius: 8px;
-  color: #C5C7CD;
+  color: var(--black);
   padding-left: 16px;
   height: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
-input:focus{
+select{
+  appearance: none;
+  background: url("../public/arrow-select.svg") no-repeat center;
+  background-position-x: 10px ;
+  cursor: pointer;
+}
+.input-search{
+  background: url('../public/search.svg') no-repeat center;
+  background-position-x: 20px;
+  background-size: 24px;
+  padding-left: 54px;
+}
+input:focus,select:focus{
   outline: none;
 }
 .span-12{
@@ -105,3 +119,14 @@ input:focus{
   line-height: 30px;
 }
 
+.btn{
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+}
