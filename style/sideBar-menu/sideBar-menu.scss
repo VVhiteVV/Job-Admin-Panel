@@ -1,9 +1,10 @@
 .sideBar-menu{
+  position: relative;
   width: 255px;
   min-height: 100vh;
   background-color: var(--black-light);
-
   &__inner{
+    overflow:hidden;
     img{
       margin: 22px 0px 0px 22px;
     }
@@ -19,6 +20,7 @@
   &__item{
     display: flex;
     align-items: center;
+    position: relative;
     gap: 15px;
     padding: 16px 0px 16px 30px;
     width: 100%;
@@ -29,10 +31,51 @@
       color: var(--white);
     }
   }
+  &__button-hide{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -13px;
+    top: 75px;
+    width: 26px;
+    height: 26px;
+    background-color: var(--black-light);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+  }
   &__item-active{
     border-left: 3px solid white;
   }
   &__item:hover{
     background-color: var(--black-hover);
+  }
+}
+.sideBar-active{
+    animation: sideBar-active 1s ease;
+    animation-fill-mode: forwards;
+}
+.sideBar-disable{
+  animation: sideBar-disable 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sideBar-active {
+  from{
+    width: 255px;
+  }
+
+  to{
+    width: 0;
+  }
+}
+@keyframes sideBar-disable {
+  from{
+    width: 0;
+  }
+
+  to{
+    width: 255px;
   }
 }
