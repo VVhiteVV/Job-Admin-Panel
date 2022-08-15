@@ -193,7 +193,7 @@ input:focus,select:focus{
   align-items: center;
   user-select: none;
 }
-.checkbox+label::before {
+.checkbox+label::before,.radio+label::before  {
   content: '';
   cursor: pointer;
   display: inline-block;
@@ -207,6 +207,10 @@ input:focus,select:focus{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px 16px;
+}
+.radio:checked+label::before{
+  border: 2px solid var(--blue-light);
+  background-color: var(--blue-light);
 }
 .checkbox:checked+label::before {
   border-color: #0b76ef;

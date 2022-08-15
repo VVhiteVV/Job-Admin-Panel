@@ -54,11 +54,6 @@
 
   &__content-form-item{
     width: 344px;
-    div{
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
     span{
       text-transform: uppercase;
       color: var(--gray);
@@ -71,6 +66,11 @@
         font-weight: 400;
       }
     }
+  }
+  &__content-form-item > div {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
   }
   &__content-form-buttons{
     display: flex;
@@ -88,6 +88,15 @@
       color: red;
       background-color: rgba(0,0,0,0);
       border: 1px solid red;
+    }
+  }
+  &__content-form-item-checkbox{
+    display: flex;
+    gap: 24px;
+    div{
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
   }
 }
