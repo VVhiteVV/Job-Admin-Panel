@@ -19,17 +19,19 @@
   flex-direction: column;
 }
 .sideBar-menu__item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  gap: 15px;
-  padding: 16px 0px 16px 30px;
   width: 255px;
   height: 56px;
   cursor: pointer;
   border-left: 3px solid transparent;
 }
 .sideBar-menu__item a {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+  position: relative;
+  gap: 15px;
+  height: 56px;
+  width: 100%;
   color: var(--white);
 }
 .sideBar-menu__button-hide {
@@ -644,6 +646,7 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 

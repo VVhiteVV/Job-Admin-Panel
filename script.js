@@ -5,7 +5,7 @@ $('.sideBar-menu__button-hide').click(function (){
    let logo = $('.sideBar-menu__logo')
    if(!menu.hasClass('sideBar-active')){
       menu.removeClass('sideBar-disable').addClass('sideBar-active');
-      item.children('a').fadeOut(300);
+      item.find('span').fadeOut(300);
       logo.attr('src','../public/logo-s.png');
       this.style.transform = "rotate(180deg)";
 
