@@ -1,4 +1,4 @@
-.Main{
+.Main-user-table{
   width: 100%;
   min-height: 100vh;
   padding: 24px 30px 10px 30px ;
@@ -44,9 +44,12 @@
 
   }
   &__content-top-btn-add{
-    background-color: var(--blue);
+    background-color: var(--blue-light);
     color: var(--white);
-    width: 130px;
+  }
+  &__content-top-btn-import{
+    background-color: var(--green);
+    color: var(--white);
   }
   &__content-top-search > div {
     width: 224px;
@@ -84,7 +87,7 @@
         background-color: #F7F8FF;
         cursor: pointer;
       }
-      td:nth-child(1),td:nth-child(2){
+      .td-bold{
         font-weight: 500;
       }
 
@@ -130,6 +133,26 @@
     }
     svg:last-child{
       transform: rotate(180deg);
+    }
+  }
+  &__content-icons{
+    display: flex;
+    gap: 4px;
+  }
+  &__content-form-users{
+    padding-left: 30px;
+    height: 720px;
+  }
+  &__content-form-users-inner{
+    display: grid;
+    grid-template-columns: 344px 344px 344px 344px;
+    gap: 40px;
+  }
+  &__content-form-item-checkbox{
+    display: flex;
+    flex-direction: row;
+    div{
+      display: flex;
     }
   }
 

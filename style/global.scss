@@ -1,5 +1,8 @@
 @import "sideBar-menu/sideBar-menu";
-@import "Packages/Main/Main";
+@import "Packages/new-packages/new-packages";
+@import "Packages/table-packages/table-packages";
+@import "Users/tabel-user/tabel-user";
+@import "Users/new-user/new-user";
 :root{
   --black-light: #363740;
   --black:#252733;
@@ -7,7 +10,8 @@
   --white: #F7F8FC;
   --gray:#9FA2B4;
   --gray-light:#b5b8c4;
-  --blue: #315EFB;
+  --blue:#3751FF;
+  --blue-light: #315EFB;
   --green:#21A366;
 }
 body{
@@ -61,7 +65,7 @@ h1,h2,h3,h4{
 input{
   border: 1px solid #EBEDF0;
   border-radius: 8px;
-  color: var(--black);
+  color: #4B506D;
   padding-left: 16px;
   height: 40px;
   font-weight: 400;
@@ -73,6 +77,15 @@ select{
   background: url("../public/arrow-select.svg") no-repeat center;
   background-position-x: 10px ;
   cursor: pointer;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  color: #4B506D;
+  padding-left: 16px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
 }
 .input-search{
   background: url('../public/search.svg') no-repeat center;
@@ -129,4 +142,73 @@ input:focus,select:focus{
   line-height: 18px;
   text-align: center;
   padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-gray,.icon-green,.icon-red,.icon-plus,.icon-refresh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px 5px 7px;
+  border-radius: 8px;
+  width: 36px;
+  height: 26px;
+}
+
+.icon-gray{
+  background-color: #ECECF0;
+}
+.icon-green{
+  background-color: #29CC97;
+  color: white;
+}
+.icon-red{
+  background-color: #FF564E;
+  color: white;
+}
+.icon-plus{
+ background-color: var(--blue-light);
+  background-image: url("../public/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+}
+.icon-refresh{
+  background-color: #FEC400;
+  background-image: url("../public/refresh.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+}
+.checkbox,.radio{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox+label,.radio+label{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.checkbox+label::before {
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #C5C7CD;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+}
+.checkbox:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("../public/checkbox.svg");
 }

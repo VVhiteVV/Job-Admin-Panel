@@ -1,0 +1,98 @@
+.Main-packages-form__content-form-packages {
+  padding-left: 30px;
+  height: 720px;
+}
+.Main-packages-form__content-form-packages-inner {
+  display: grid;
+  grid-template-columns: 344px 344px 344px 344px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b c d" "e f f u";
+  gap: 40px;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(1) {
+  grid-area: a;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(2) {
+  grid-area: b;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(3) {
+  grid-area: c;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(4) {
+  grid-area: d;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(5) {
+  grid-area: e;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(6) {
+  width: 100%;
+  grid-area: f;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:nth-child(7) {
+  grid-area: u;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:last-child {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:last-child div {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  height: 40px;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:last-child label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: var(--blue);
+  cursor: pointer;
+}
+.Main-packages-form__content-form-packages-inner > .Main-packages-form__content-form-item:last-child input {
+  display: none;
+}
+.Main-packages-form__content-form-item {
+  width: 344px;
+}
+.Main-packages-form__content-form-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.Main-packages-form__content-form-item span {
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.Main-packages-form__content-form-item select {
+  width: 100%;
+  background-size: 20px 20px;
+  background-position-x: 308px;
+}
+.Main-packages-form__content-form-item select option {
+  font-weight: 400;
+}
+.Main-packages-form__content-form-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+}
+.Main-packages-form__content-form-buttons a:nth-child(1) {
+  color: var(--gray);
+}
+.Main-packages-form__content-form-buttons a:nth-child(2) {
+  color: white;
+  background-color: var(--blue-light);
+}
+.Main-packages-form__content-form-buttons a:nth-child(3) {
+  color: red;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=new-packages.css.map */
