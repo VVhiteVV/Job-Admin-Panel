@@ -1,0 +1,23 @@
+.Main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+}
+.Main__top-right, .Main__top-right-info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.Main__top-right-border {
+  border-left: 1px solid var(--black-light);
+  height: 34px;
+}
+.Main__top-right-user-name {
+  width: 190px;
+}
+.Main__top-right-user-name span:last-child {
+  color: var(--gray);
+}
+
+/*# sourceMappingURL=Main-top.css.map */
