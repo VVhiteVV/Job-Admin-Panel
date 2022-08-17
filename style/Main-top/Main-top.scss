@@ -1,0 +1,39 @@
+.Main{
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 30px 10px 30px ;
+  &__inner{
+
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+  &__top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    a{
+      display: flex;
+      gap: 2px;
+      color: var(--blue-light);
+    }
+  }
+  &__top-right,&__top-right-info{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  &__top-right-border{
+    border-left: 1px solid var(--black-light);
+    height: 34px;
+  }
+  &__top-right-user-name{
+    width: 190px;
+    span:last-child{
+      color: var(--gray);
+    }
+  }
+}

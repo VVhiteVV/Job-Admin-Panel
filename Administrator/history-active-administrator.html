@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 <body>
 
 <div class="wrapper">
-<section class="sideBar-menu">
+<section class="sideBar-menu ">
     <div class="sideBar-menu__inner">
         <a href="#"><img src="../public/logo.png" alt="" class="sideBar-menu__logo"></a>
         <nav class="sideBar-menu__menu">
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="sideBar-menu__item">
-                    <a href="">
+                    <a href="../Company/index.html">
                         <div class="sideBar-menu__item-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z" fill="#F7F8FC"/>
@@ -90,7 +90,7 @@
                                 <path d="M12 3C7.03 3 3 7.03 3 12V19C3 20.1 3.9 21 5 21H9V13H5V12C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12V13H15V21H19C20.1 21 21 20.1 21 19V12C21 7.03 16.97 3 12 3ZM7 15V19H5V15H7ZM19 19H17V15H19V19Z" fill="#F7F8FC"/>
                             </svg>
                         </div>
-                        <span class="span-16" >Техподдержка </span>
+                       <span class="span-16" >Техподдержка </span>
                     </a>
                 </li>
             </ul>
@@ -105,7 +105,22 @@
 <section class="Main">
     <div class="Main__inner">
         <div class="Main__top">
-            <h2 class="span-24">Пакет</h2>
+            <div class="Main__top-left">
+                <h2 class="span-24">Ретроспектива</h2>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_2_3780)">
+                            <path d="M12.2548 14.4122C12.5792 14.0878 12.5795 13.5619 12.2555 13.2372L9.73012 10.7063C9.34063 10.316 9.34063 9.68401 9.73012 9.29366L12.2555 6.76282C12.5795 6.43807 12.5792 5.91221 12.2548 5.58782C11.9302 5.26318 11.4038 5.26318 11.0792 5.58782L7.3741 9.29289C6.98357 9.68342 6.98357 10.3166 7.3741 10.7071L11.0792 14.4122C11.4038 14.7368 11.9302 14.7368 12.2548 14.4122Z" fill="#315EFB"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2_3780">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="span-16">Назад</span>
+                </a>
+            </div>
             <div class="Main__top-right">
                 <div class="Main__top-right-info">
                     <div class="Main__top-right-notification">
@@ -128,71 +143,84 @@
             </div>
         </div>
 
-        <div class="Main-packages-form__content">
-            <div class="Main-packages-form__content-top">
-                <h3 class="span-20" >Редактировать пакет</h3>
-            </div>
-            <form class="Main-packages-form__content-form-packages">
-                   <div class="Main-packages-form__content-form-packages-inner">
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите промышленность</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>Птицеводческая промышленность</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите название Пакета</span>
-                               <input type="text" value="Мясо ЦБ России">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите номер пакета</span>
-                               <input type="text" value="30">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите регион</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>ЦФО</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите формат пакета</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>Профессиональный</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите описание пакета </span>
-                               <input type="text" value="Профессиональный">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <input type="file" id="input__file" >
-                               <label class="span-14 Label-file" for="input__file">Загрузите иконку пакета</label>
-                           </div>
-                       </div>
-                   </div>
-                <div class="Main-packages-form__content-form-buttons">
-                    <a href="index.html" class="btn btn-cancel" >Отмена</a>
-                    <a href="index.html" class="btn btn-primary">Сохранить изменения</a>
-                    <a href="index.html" class="btn btn-danger">Удалить пакет</a>
+        <div class="Main-administrator-table__content">
+            <div class="Main-administrator-table__content-top">
+                <h3 class="span-20" >История активности пользователя Саматова Айгуль</h3>
+                <div class="Main-administrator-table__content-top-search">
+                    <div>
+                        <input class="input-search" type="text" placeholder="Поиск компании" >
+                    </div>
+                    <a href="new-administrator.html" class="Main-administrator-table__content-top-btn-add btn">
+                        Новый пользователь
+                    </a>
                 </div>
-            </form>
+            </div>
+            <div class="Main-administrator-table__content-table">
+                <table>
+                    <tr>
+                        <th><span class="span-14" >Дата</span></th>
+                        <th><span class="span-14" >IP-адрес</span></th>
+                        <th><span class="span-14" >Событие</span></th>
+                    </tr>
+                    <tr>
+                        <td class="td-bold" >20.05.22</td>
+                        <td>91.187.189.34</td>
+                        <td>Вход пользователя в личный кабинет</td>
+                    </tr>
+                    <tr>
+                        <td class="td-bold" >20.05.22</td>
+                        <td>91.187.189.34</td>
+                        <td>Пользователь скачал файл (Оперативная информация о ценах на продукцию (мясо птицы).pdf)</td>
+                    </tr>
+                    <tr>
+                        <td class="td-bold" >20.05.22</td>
+                        <td>91.187.189.34</td>
+                        <td>Пользователь скачал файл (Пакет №11 Профессиональный (птица).xlsb)</td>
+                    </tr>
+                    <tr>
+                        <td class="td-bold" >20.05.22</td>
+                        <td>91.187.189.34</td>
+                        <td>Пользователь скачал файл (Оперативная информация о ценах на продукцию (мясо птицы).pdf)</td>
+                    </tr>
+                    <tr>
+                        <td class="td-bold" >20.05.22</td>
+                        <td>91.187.189.34</td>
+                        <td>Вход пользователя в личный кабинет</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <div class="pagination" >
+                                <div class="pagination-select">
+                                    <span class="span-14" >Строк на странице: </span>
+                                    <select name="" id="" class="span-14">
+                                        <option value="">4</option>
+                                        <option value="">6</option>
+                                        <option value="" selected>8</option>
+                                        <option value="">10</option>
+                                    </select>
+                                </div>
+                                <div class="pagination-transition">
+                                    <span class="With span-14">1</span> - <span class="Before span-14" >8</span> <span class="span-14" > из </span> <span class="From span-14" >24</span>
+                                    <div class="pagination-transition-arrows">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
 </div>
+
 <script src="../js/script.js" ></script>
+<script src="../js/href.js" ></script>
 </body>
 </html>

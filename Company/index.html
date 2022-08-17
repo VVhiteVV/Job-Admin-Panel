@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 <body>
 
 <div class="wrapper">
-<section class="sideBar-menu">
+<section class="sideBar-menu ">
     <div class="sideBar-menu__inner">
         <a href="#"><img src="../public/logo.png" alt="" class="sideBar-menu__logo"></a>
         <nav class="sideBar-menu__menu">
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li class="sideBar-menu__item">
-                    <a href="">
+                    <a href="../Administrator/index.html">
                         <div class="sideBar-menu__item-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M16.9999 16.62C17.6184 16.62 18.1199 16.1186 18.1199 15.5C18.1199 14.8814 17.6184 14.38 16.9999 14.38C16.3813 14.38 15.8799 14.8814 15.8799 15.5C15.8799 16.1186 16.3813 16.62 16.9999 16.62Z" fill="#F7F8FC"/>
@@ -90,7 +90,7 @@
                                 <path d="M12 3C7.03 3 3 7.03 3 12V19C3 20.1 3.9 21 5 21H9V13H5V12C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12V13H15V21H19C20.1 21 21 20.1 21 19V12C21 7.03 16.97 3 12 3ZM7 15V19H5V15H7ZM19 19H17V15H19V19Z" fill="#F7F8FC"/>
                             </svg>
                         </div>
-                        <span class="span-16" >Техподдержка </span>
+                       <span class="span-16" >Техподдержка </span>
                     </a>
                 </li>
             </ul>
@@ -105,7 +105,7 @@
 <section class="Main">
     <div class="Main__inner">
         <div class="Main__top">
-            <h2 class="span-24">Пакет</h2>
+            <h2 class="span-24">Компании</h2>
             <div class="Main__top-right">
                 <div class="Main__top-right-info">
                     <div class="Main__top-right-notification">
@@ -128,71 +128,139 @@
             </div>
         </div>
 
-        <div class="Main-packages-form__content">
-            <div class="Main-packages-form__content-top">
-                <h3 class="span-20" >Редактировать пакет</h3>
-            </div>
-            <form class="Main-packages-form__content-form-packages">
-                   <div class="Main-packages-form__content-form-packages-inner">
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите промышленность</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>Птицеводческая промышленность</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите название Пакета</span>
-                               <input type="text" value="Мясо ЦБ России">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите номер пакета</span>
-                               <input type="text" value="30">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите регион</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>ЦФО</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите формат пакета</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>Профессиональный</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите описание пакета </span>
-                               <input type="text" value="Профессиональный">
-                           </div>
-                       </div>
-                       <div class="Main-packages-form__content-form-item">
-                           <div class="form-item-select">
-                               <input type="file" id="input__file" >
-                               <label class="span-14 Label-file" for="input__file">Загрузите иконку пакета</label>
-                           </div>
-                       </div>
-                   </div>
-                <div class="Main-packages-form__content-form-buttons">
-                    <a href="index.html" class="btn btn-cancel" >Отмена</a>
-                    <a href="index.html" class="btn btn-primary">Сохранить изменения</a>
-                    <a href="index.html" class="btn btn-danger">Удалить пакет</a>
+        <div class="Main-company-table__content">
+            <div class="Main-company-table__content-top">
+                <h3 class="span-20" >Все компании</h3>
+                <div class="Main-company-table__content-top-search">
+                    <div>
+                        <input class="input-search" type="text" placeholder="Поиск компании" >
+                    </div>
+                    <a href="new-company.html" class="Main-company-table__content-top-btn-add btn">
+                        Новая Компания
+                    </a>
                 </div>
-            </form>
+            </div>
+            <div class="Main-company-table__content-table">
+                <table class="table-href">
+                    <tr>
+                        <th><span class="span-14" >Компания
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.38333 4.51675L7.68333 5.21675L5.7 3.23342L5.7 14.0501L4.7 14.0501L4.7 3.23342L2.7 5.23342L2 4.53341L5.2 1.33342L8.38333 4.51675ZM14 11.4834L10.8167 14.6667L7.61667 11.4667L8.31667 10.7667L10.3167 12.7667L10.3167 1.95008L11.3167 1.95008L11.3167 12.7667L13.3 10.7834L14 11.4834Z" fill="#9FA2B4"/>
+                            </svg>
+                        </span>
+                        </th>
+                        <th><span class="span-14" >ИНН</span></th>
+                        <th><span class="span-14" >Ф.О</span></th>
+                        <th><span class="span-14" >E-mail</span></th>
+                        <th><span class="span-14" >Телефон</span></th>
+                        <th><span class="span-14" >Номер договора</span></th>
+                        <th><span class="span-14" >Срок действия договора</span></th>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ООО "Агросила-Коммерция"</td>
+                        <td>1650310080</td>
+                        <td>ПФО</td>
+                        <td>office@chelny-broiler.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№00005 АПК РФ</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ООО «Линдовское»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>lekeeva@lindann.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№778 GM (РФПФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ОАО «Птицефабрика молодежная»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>info@ptfmolodezhnaya.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№7GM (РФСФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ООО «Линдовское»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>lekeeva@lindann.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№778 GM (РФПФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ОАО «Птицефабрика молодежная»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>info@ptfmolodezhnaya.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№7GM (РФСФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ООО «Линдовское»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>lekeeva@lindann.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№778 GM (РФПФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ОАО «Птицефабрика молодежная»</td>
+                        <td>5263091381 </td>
+                        <td>ПФО</td>
+                        <td>info@ptfmolodezhnaya.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№7GM (РФСФО/ПФ)</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr onclick="window.location.href='update-company.html'; return false">
+                        <td>ООО "Агросила-Коммерция"</td>
+                        <td>1650310080</td>
+                        <td>ПФО</td>
+                        <td>office@chelny-broiler.ru</td>
+                        <td>+7 (855) 274-60-05</td>
+                        <td>№00005 АПК РФ</td>
+                        <td>с <strong>26.07.21</strong> по <strong>26.07.21</strong> г.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <div class="pagination" >
+                                <div class="pagination-select">
+                                    <span class="span-14" >Строк на странице: </span>
+                                    <select name="" id="" class="span-14">
+                                        <option value="">4</option>
+                                        <option value="">6</option>
+                                        <option value="" selected>8</option>
+                                        <option value="">10</option>
+                                    </select>
+                                </div>
+                                <div class="pagination-transition">
+                                    <span class="With span-14">1</span> - <span class="Before span-14" >8</span> <span class="span-14" > из </span> <span class="From span-14" >24</span>
+                                    <div class="pagination-transition-arrows">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
 </div>
+
 <script src="../js/script.js" ></script>
 </body>
 </html>

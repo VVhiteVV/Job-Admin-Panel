@@ -1,4 +1,4 @@
-.Main-user-table{
+.Main-administrator-table{
 
   &__content{
     margin-top: 69px;
@@ -56,6 +56,12 @@
       }
       td{
         height: 91px;
+
+      }
+      tr:not(:last-child) td:last-child{
+        display: flex;
+        gap: 5px;
+        align-items: center;
       }
       tr:hover:not(:last-child),tr:hover:not(td:last-child){
         background-color: #F7F8FF;

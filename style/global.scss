@@ -1,8 +1,17 @@
 @import "sideBar-menu/sideBar-menu";
+@import "custom-select";
 @import "Packages/new-packages/new-packages";
 @import "Packages/table-packages/table-packages";
 @import "Users/tabel-user/tabel-user";
+@import "Users/import-user/import-user";
 @import "Users/new-user/new-user";
+@import "Users/history-package-user/history-package-user";
+@import "Users/history-documents-user/history-documents-user";
+@import "Company/table-company/table-company";
+@import "Company/new-company/new-company";
+@import "Administrator/table-administrator/table-administrator";
+@import "Administrator/new-administrator/new-administrator";
+@import "Main-top/Main-top";
 :root{
   --black-light: #363740;
   --black:#252733;
@@ -19,6 +28,7 @@ body{
   padding: 0;
   background-color: #ffffff;
   font-family: 'Geometria';
+  position: relative;
   width: 100%;
   color: var(--black);
   min-height: 100vh;
@@ -72,6 +82,15 @@ input{
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  width: 100%;
+}
+input[type=date]::-webkit-calendar-picker-indicator{
+  display: none;
+}
+input[type=date]{
+  background: url("../public/calendar.svg") no-repeat center;
+  background-position-x: 95%;
+  background-size: 20px 20px;
 }
 select{
   appearance: none;
@@ -86,6 +105,9 @@ select{
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  option{
+    gap: 20px;
+  }
 
 }
 .input-search{
@@ -96,6 +118,12 @@ select{
 }
 input:focus,select:focus{
   outline: none;
+}
+input::placeholder{
+  color: var(--gray);
+}
+span{
+  display: block;
 }
 .span-12{
   display: block;
@@ -148,6 +176,37 @@ input:focus,select:focus{
   align-items: center;
 }
 
+.btn-cancel{
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  color: var(--gray);
+}
+.btn-primary{
+  color: white;
+  background-color: var(--blue-light);
+}
+.btn-danger{
+  color: red;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid red;
+}
+
+.btn-file{
+  width: 100%;
+  border: 1px solid var(--blue-light);
+  label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: var(--blue);
+    cursor: pointer;
+  }
+  input{
+    display: none;
+  }
+}
 .icon-gray,.icon-green,.icon-red,.icon-plus,.icon-refresh{
   display: flex;
   justify-content: center;
@@ -183,22 +242,43 @@ input:focus,select:focus{
   background-position: center;
   width: 26px;
 }
+.icon-excel{
+  width: 20px;
+  height: 20px;
+  background: url("../public/Excel.svg");
+}
+.icon-word{
+  width: 20px;
+  height: 20px;
+  background: url("../public/Word.svg");
+}
+.icon-PDF{
+  width: 16px;
+  height: 20px;
+  background: url("../public/PDF.svg");
+}
+.icon-close{
+  width: 24px;
+  height: 24px;
+  background: url("../public/close.svg");
+  cursor: pointer;
+}
 .checkbox,.radio{
   position: absolute;
   z-index: -1;
   opacity: 0;
+  width: 0;
 }
 .checkbox+label,.radio+label{
   display: inline-flex;
-  align-items: center;
   user-select: none;
 }
 .checkbox+label::before,.radio+label::before  {
   content: '';
   cursor: pointer;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 2px solid #C5C7CD;
@@ -208,12 +288,109 @@ input:focus,select:focus{
   background-position: center center;
   background-size: 16px 16px;
 }
-.radio:checked+label::before{
-  border: 2px solid var(--blue-light);
-  background-color: var(--blue-light);
-}
 .checkbox:checked+label::before {
   border-color: #0b76ef;
   background-color: #0b76ef;
   background-image: url("../public/checkbox.svg");
+}
+.radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+.radio:not(:disabled):active+label::before {
+  background-color: white;
+  border: 2px solid var(--blue-light);
+}
+
+.radio:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+.radio:checked+label::before {
+  border-color: #0b76ef;
+  background-color: white;
+  background-image: url("../public/radio.svg");
+  background-size: 10px 10px;
+}
+.radio:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+.form-item-select{
+  width: 100%;
+  span{
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+  select{
+    width: 100%;
+    background-size: 20px 20px;
+    background-position-x: 308px;
+    option{
+      font-weight: 400;
+    }
+  }
+  div{
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+.form-item-select > div{
+  gap: 24px;
+}
+.checkbox-item{
+  display: flex;
+  align-items: center;
+  span{
+    margin-top: 2px;
+  }
+}
+
+.tr-checked{
+  background-color: #F7F8FF;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 81px;
+  padding-right: 24px;
+  width: 100%;
+  height: 100%;
+}
+.pagination-select{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span{
+    color: var(--gray);
+    font-weight: 400;
+  }
+  select{
+    width: 50px;
+    border: none;
+    font-weight: 400;
+    color: #4B506D;
+  }
+}
+.pagination-transition{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--gray);
+  font-weight: 400;
+  span{
+    font-weight: 400;
+  }
+}
+.pagination-transition-arrows{
+  margin-left: 16px;
+  svg{
+    cursor: pointer;
+  }
+  svg:last-child{
+    transform: rotate(180deg);
+  }
 }

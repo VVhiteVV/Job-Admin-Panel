@@ -1,11 +1,11 @@
- <!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Добавление пользователя</title>
+    <title>Пакеты</title>
     <link rel="stylesheet" type="text/css" href="../style/global.css">
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
@@ -15,7 +15,7 @@
 <body>
 
 <div class="wrapper">
-<section class="sideBar-menu">
+<section class="sideBar-menu ">
     <div class="sideBar-menu__inner">
         <a href="#"><img src="../public/logo.png" alt="" class="sideBar-menu__logo"></a>
         <nav class="sideBar-menu__menu">
@@ -105,7 +105,22 @@
 <section class="Main">
     <div class="Main__inner">
         <div class="Main__top">
-            <h2 class="span-24">Пользователи</h2>
+            <div class="Main__top-left">
+                <h2 class="span-24">Ретроспектива</h2>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_2_3780)">
+                            <path d="M12.2548 14.4122C12.5792 14.0878 12.5795 13.5619 12.2555 13.2372L9.73012 10.7063C9.34063 10.316 9.34063 9.68401 9.73012 9.29366L12.2555 6.76282C12.5795 6.43807 12.5792 5.91221 12.2548 5.58782C11.9302 5.26318 11.4038 5.26318 11.0792 5.58782L7.3741 9.29289C6.98357 9.68342 6.98357 10.3166 7.3741 10.7071L11.0792 14.4122C11.4038 14.7368 11.9302 14.7368 12.2548 14.4122Z" fill="#315EFB"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2_3780">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="span-16">Назад</span>
+                </a>
+            </div>
             <div class="Main__top-right">
                 <div class="Main__top-right-info">
                     <div class="Main__top-right-notification">
@@ -128,115 +143,154 @@
             </div>
         </div>
 
-        <div class="Main-new-user-form__content">
-            <div class="Main-new-user-form__content-top">
-                <h3 class="span-20" >Дбавить пользователя</h3>
-            </div>
-            <form class="Main-new-user-form__content-form-users">
-                   <div class="Main-new-user-form__content-form-users-inner">
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите ф.и.о</span>
-                               <input type="text" value="Максаков Никита">
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите e-mail</span>
-                               <input type="text" value="n.maksakov@globalmonitoring.ru">
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите пароль</span>
-                               <input type="text" value="R8mmXas">
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите номер телефона</span>
-                               <input type="text" value="+7(922)623-11-02">
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите название компании</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>ООО 'ТД Черкизово'</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Введите должность </span>
-                               <input type="text" value="Ассистент отдела маркетинга">
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите статус пользователя</span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>Клиент</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Выберите количество активных пакетов </span>
-                               <select class="span-14" name="" id="">
-                                   <option value="" selected>4</option>
-                               </select>
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Контактное лицо </span>
-                               <div class="Main-new-user-form__content-form-item-radio">
-                                   <div>
-                                       <div class="checkbox-item" >
-                                           <input id="contacts-yes" class="radio" type="radio">
-                                           <label for="contacts-yes"></label>
-                                           <span class="span-14">Да</span>
-                                       </div>
-                                   </div>
-                                   <div>
-                                        <div class="checkbox-item" >
-                                            <input id="contacts-no" class="radio" type="radio">
-                                            <label for="contacts-no"></label>
-                                            <span class="span-14">Нет</span>
-                                        </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="Main-new-user-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Уведомления об обновлении </span>
-                               <div class="Main-new-user-form__content-form-item-checkbox">
-                                   <div>
-                                       <input id="alerts-yes" class="checkbox" type="checkbox">
-                                       <label for="alerts-yes"></label>
-                                       <span class="span-14">SMS</span>
-                                   </div>
-                                   <div>
-                                       <input id="alerts-no" class="checkbox" type="checkbox">
-                                       <label for="alerts-no"></label>
-                                       <span class="span-14">E-MAIL</span>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
+        <div class="Main-history-package-table__content">
+            <div class="Main-history-package-table__content-top">
+                <h3 class="span-20" >История пакетов пользователя Саматова Айгульи</h3>
 
-                   </div>
-                <div class="Main-new-user-form__content-form-buttons">
-                    <a href="index.html" class="btn btn-cancel" >Отмена</a>
-                    <a href="index.html" class="btn btn-primary">Добавить пользователя</a>
-                </div>
-            </form>
+            </div>
+            <div class="Main-history-package-table__content-table">
+                <table>
+                    <tr>
+                        <th><span class="span-14" >№ Пакета
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.38333 4.51675L7.68333 5.21675L5.7 3.23342L5.7 14.0501L4.7 14.0501L4.7 3.23342L2.7 5.23342L2 4.53341L5.2 1.33342L8.38333 4.51675ZM14 11.4834L10.8167 14.6667L7.61667 11.4667L8.31667 10.7667L10.3167 12.7667L10.3167 1.95008L11.3167 1.95008L11.3167 12.7667L13.3 10.7834L14 11.4834Z" fill="#9FA2B4"/>
+                            </svg>
+                        </span>
+                        </th>
+                        <th><span class="span-14" >Формат</span></th>
+                        <th><span class="span-14" >Промышленность
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.38333 4.51675L7.68333 5.21675L5.7 3.23342L5.7 14.0501L4.7 14.0501L4.7 3.23342L2.7 5.23342L2 4.53341L5.2 1.33342L8.38333 4.51675ZM14 11.4834L10.8167 14.6667L7.61667 11.4667L8.31667 10.7667L10.3167 12.7667L10.3167 1.95008L11.3167 1.95008L11.3167 12.7667L13.3 10.7834L14 11.4834Z" fill="#9FA2B4"/>
+                            </svg>
+                        </span>
+                        </th>
+                        <th><span class="span-14" >Название</span></th>
+                        <th><span class="span-14" >Описание</span>
+                        </th>
+                        <th><span class="span-14" >Дата загрузки</span></th>
+                        <th><span class="span-14" >Статус</span></th>
+                        <th><span class="span-14" >Файл</span></th>
+                        <th><span class="span-14" >Удалить</span></th>
+                    </tr>
+                    <tr data-href="update-user.html">
+                            <td class="td-bold" >11</td>
+                            <td class="td-bold" >Профессиональный</td>
+                            <td>Птицеводческая промышленность</td>
+                            <td>Мясо ЦБ России </td>
+                            <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                            <td>20.05.22 06:31</td>
+                            <td>Активен </td>
+                            <td><div class="icon-excel" ></div></td>
+                            <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+                    <tr data-href="update-user.html">
+                        <td class="td-bold" >11</td>
+                        <td class="td-bold" >Профессиональный</td>
+                        <td>Птицеводческая промышленность</td>
+                        <td>Мясо ЦБ России </td>
+                        <td>Состав и конъюнктура рынка мяса цыпленка бройлера</td>
+                        <td>20.05.22 06:31</td>
+                        <td>Активен </td>
+                        <td><div class="icon-excel" ></div></td>
+                        <td><div class="icon-close" ></div></td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="9">
+                            <div class="Main-history-package-table__content-pagination" >
+                                <div class="Main-history-package-table__content-pagination-select">
+                                    <span class="span-14" >Строк на странице: </span>
+                                    <select name="" id="" class="span-14">
+                                        <option value="">4</option>
+                                        <option value="">6</option>
+                                        <option value="" selected>8</option>
+                                        <option value="">10</option>
+                                    </select>
+                                </div>
+                                <div class="Main-history-package-table__content-pagination-transition">
+                                    <span class="With span-14">1</span> - <span class="Before span-14" >8</span> <span class="span-14" > из </span> <span class="From span-14" >24</span>
+                                    <div class="Main-history-package-table__content-pagination-transition-arrows">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.7054 17.2946C15.0947 16.9053 15.095 16.2743 14.7062 15.8846L11.5348 12.7063C11.1453 12.316 11.1453 11.684 11.5348 11.2937L14.7062 8.11538C15.095 7.72569 15.0947 7.09466 14.7054 6.70538C14.3158 6.31581 13.6842 6.31581 13.2946 6.70538L8.70711 11.2929C8.31658 11.6834 8.31658 12.3166 8.70711 12.7071L13.2946 17.2946C13.6842 17.6842 14.3158 17.6842 14.7054 17.2946Z" fill="#9FA2B4"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
+
 </div>
+
 <script src="../js/script.js" ></script>
+<script src="../js/href.js" ></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.Main-packages-table{
+.Main-import-user-table{
 
   &__content{
     margin-top: 69px;
@@ -54,12 +54,17 @@
         width: 400px;
         padding-left: 30px;
       }
+      td:first-child,th:first-child {
+        width: 100px;
+        text-align: center;
+      }
       td{
         height: 91px;
       }
       tr:hover:not(:last-child){
         background-color: #F7F8FF;
         cursor: pointer;
+        z-index: 1;
       }
       .td-bold{
         font-weight: 500;
@@ -67,4 +72,16 @@
 
     }
   }
+
+  &__content-icons{
+    display: flex;
+    gap: 4px;
+  }
+  &__content-form-users{
+    padding-left: 30px;
+    height: 720px;
+  }
+
+
+
 }
