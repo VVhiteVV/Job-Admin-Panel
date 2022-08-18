@@ -130,7 +130,7 @@
 
         <div class="Main-new-administrator-form__content">
             <div class="Main-new-administrator-form__content-top">
-                <h3 class="span-20" >Дбавить пользователя</h3>
+                <h3 class="span-20" >Редактировать пользователя</h3>
             </div>
             <form class="Main-new-administrator-form__content-form-company">
                    <div class="Main-new-administrator-form__content-form-company-inner">
@@ -155,9 +155,13 @@
                            <div class="Main-new-administrator-form__content-form-item">
                                <div class="form-item-select">
                                    <span class="span-14">Выберите роль</span>
-                                   <select name="" id="">
-                                       <option value="" selected >Профессиональный</option>
-                                   </select>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input type="hidden" class="select-input">
+                                       <ul class="select-list">
+                                           <li class="select-item">Профессиональный</li>
+                                       </ul>
+                                   </div>
                                </div>
                            </div>
                    </div>
@@ -172,5 +176,6 @@
 </section>
 </div>
 <script src="../js/script.js" ></script>
+<script src="../js/select.js" ></script>
 </body>
 </html>

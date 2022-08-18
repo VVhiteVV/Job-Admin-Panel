@@ -75,7 +75,7 @@ function Hidden(name,state){
 }
 
 
-
+///////////get data input checkbox-radio
 $('input[type=checkbox], input[type=radio]').on("click",function(){
 
    if($(this).is(":checked")){
@@ -87,3 +87,15 @@ $('input[type=checkbox], input[type=radio]').on("click",function(){
    }
 })
 
+
+/////////href-hover-effect
+$(document).ready(function(){
+   $('.sideBar-menu__list li a').each(function () {
+      let location = window.location.href;
+      let link = this.href;
+      if(location === link) {
+         $(this).parent().addClass('sideBar-menu__item-active');
+      }
+
+   });
+});
