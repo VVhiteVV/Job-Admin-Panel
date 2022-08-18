@@ -12,6 +12,7 @@
 @import "Administrator/table-administrator/table-administrator";
 @import "Administrator/new-administrator/new-administrator";
 @import "Activity/table-activity/table-activity";
+@import "Tech-support/table-support/table-support";
 @import "Main-top/Main-top";
 :root{
   --black-light: #363740;
@@ -391,24 +392,54 @@ span{
     transform: rotate(180deg);
   }
 }
-
-
-.status{
-  display: flex;
-  justify-content: center;
-  width: 40px;
+.status-user{
+  display: inline-block;
   padding: 2px 6px 2px 6px;
   color: white;
   font-size: 10px;
   font-weight: 500;
   border-radius: 2px;
+  margin-right: 100%;
 }
-.status-primary{
+.status-user-primary{
   background-color: var(--blue-light);
 }
-.status-orange{
+.status-user-orange{
   background-color: #FEC400;
 }
-.status-danger{
+.status-user-danger{
   background-color: #FF564E;
+}
+.status-support{
+  display: inline-block;
+  color: white;
+  padding: 2px 14px 2px 14px;
+  border-radius: 12px;
+  height: 24px;
+}
+.status-support-primary{
+  background-color: var(--blue-light);
+}
+.status-support-orange{
+  background-color: #FEC400;
+}
+.status-support-green{
+  background-color: #29CC97;
+}
+.status-support-red{
+  background-color: #FF564E;
+}
+.Drop-down{
+  position: relative;
+}
+.Drop-down:hover .Drop-down-content{
+  display: block;
+}
+.Drop-down-content{
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #DFE0EB;
+  display: none;
 }
