@@ -14,12 +14,32 @@ $(".select-item,.multi-select-item").on('click',function(event){
     $(this).parent().parent().children('.selected').text($(this).text())
     if(!$(this).find('input[type=checkbox]').is(':checked') && $(this).hasClass('multi-select-item')){
         event.stopPropagation();
-        console.log(this)
+
         $(this).find('input[type=checkbox]').prop('checked',true).val($(this).find('span').text());
     }
     else if($(this).find('input[type=checkbox]').is(':checked')){
         event.stopPropagation();
-        $(this).find('input[type=checkbox]').prop('checked',false).val(null);;
+        $(this).find('input[type=checkbox]').prop('checked',false).val(null);
     }
 
+})
+
+$('.checkbox-item').on('click',function (){
+    let input = $(this).find('input[type=checkbox],input[type=radio]');
+   if(!input.is(':checked')){
+       $(this).css({
+           "background-color":"var(--blue-light)",
+       }).find('span').css({
+           "color":"white"
+       })
+       input.prop('checked',true).val($(this).find('span').text());
+   }
+   else{
+       $(this).css({
+           "background-color":"white",
+       }).find('span').css({
+           "color":"var(--gray)"
+       })
+       input.prop('checked',false).val(null);
+   }
 })

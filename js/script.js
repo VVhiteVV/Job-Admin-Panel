@@ -1,15 +1,39 @@
+let menu = $('.sideBar-menu');
+let item = $('.sideBar-menu__item');
+let logo = $('.sideBar-menu__logo');
+let button_hide = $('.sideBar-menu__button-hide');
 
+// $(document).ready(function (){
+//    if(localStorage.getItem('sideBar') === '1'){
+//       menu.removeClass('sideBar-disable').addClass('sideBar-active');
+//       item.find('span').fadeOut(0);
+//       logo.attr('src','../public/logo-s.png');
+//       button_hide.css({
+//          "transform": "rotate(180deg)"
+//       });
+//       HiddenCall(false)
+//    }
+//    else{
+//       menu.removeClass('sideBar-active').addClass('sideBar-disable');
+//       item.find('span').fadeIn(300);
+//       logo.attr('src','../public/logo.png');
+//       button_hide.css({
+//          "transform": "rotate(0deg)"
+//       });
+//       HiddenCall(true)
+//    }
+//
+// console.log(typeof localStorage.sideBar)
+// })
 //////////Menu open-close
-$('.sideBar-menu__button-hide').click(function (){
-   let menu = $('.sideBar-menu');
-   let item = $('.sideBar-menu__item');
-   let logo = $('.sideBar-menu__logo')
+button_hide.click(function (){
    if(!menu.hasClass('sideBar-active')){
       menu.removeClass('sideBar-disable').addClass('sideBar-active');
       item.find('span').fadeOut(300);
       logo.attr('src','../public/logo-s.png');
       this.style.transform = "rotate(180deg)";
       HiddenCall(false)
+      localStorage.setItem('sideBar',1);
    }
    else{
       menu.removeClass('sideBar-active').addClass('sideBar-disable');
@@ -17,6 +41,7 @@ $('.sideBar-menu__button-hide').click(function (){
       logo.attr('src','../public/logo.png');
       this.style.transform = "rotate(0deg)";
       HiddenCall(true)
+      localStorage.setItem('sideBar',0);
    }
 
 })
@@ -25,7 +50,7 @@ $('.sideBar-menu__button-hide').click(function (){
 $('input[type=file]').change(function (){
    let file = this.value.split('\\').length;
    let fileName = this.value.split('\\');
-   $('input[type=file]+label').text(fileName[file-1]);
+   $(this).parent().find('label').text(fileName[file-1]);
 })
 
 

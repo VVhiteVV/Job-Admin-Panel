@@ -13,10 +13,13 @@
 @import "Administrator/new-administrator/new-administrator";
 @import "Activity/table-activity/table-activity";
 @import "Tech-support/table-support/table-support";
+@import "Tech-support/support-chat/support-chat";
+@import "Tech-support-client/index-support-chat/index-support-chat";
 @import "Main-top/Main-top";
 :root{
   --black-light: #363740;
   --black:#252733;
+  --black-blue: #4B506D;
   --black-hover:#3E4049;
   --white: #F7F8FC;
   --gray:#9FA2B4;
