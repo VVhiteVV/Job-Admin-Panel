@@ -1,0 +1,56 @@
+.icon-gray,.icon-green,.icon-red,.icon-plus,.icon-refresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 7px 5px 7px;
+    border-radius: 8px;
+    width: 36px;
+    height: 26px;
+}
+
+.icon-gray{
+    background-color: #ECECF0;
+}
+.icon-green{
+    background-color: #29CC97;
+    color: white;
+}
+.icon-red{
+    background-color: #FF564E;
+    color: white;
+}
+.icon-plus{
+    background-color: var(--blue-light);
+    background-image: url("../public/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 26px;
+}
+.icon-refresh{
+    background-color: #FEC400;
+    background-image: url("../public/refresh.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 26px;
+}
+.icon-excel{
+    width: 20px;
+    height: 20px;
+    background: url("../public/Excel.svg");
+}
+.icon-word{
+    width: 20px;
+    height: 20px;
+    background: url("../public/Word.svg");
+}
+.icon-PDF{
+    width: 16px;
+    height: 20px;
+    background: url("../public/PDF.svg");
+}
+.icon-close{
+    width: 24px;
+    height: 24px;
+    background: url("../public/close.svg");
+    cursor: pointer;
+}

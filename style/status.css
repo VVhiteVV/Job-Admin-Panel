@@ -1,0 +1,37 @@
+.status-user{
+    display: inline-block;
+    padding: 2px 6px 2px 6px;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-right: 100%;
+}
+.status-user-primary{
+    background-color: var(--blue-light);
+}
+.status-user-orange{
+    background-color: #FEC400;
+}
+.status-user-danger{
+    background-color: #FF564E;
+}
+.status-support{
+    display: inline-block;
+    color: white;
+    padding: 2px 14px 2px 14px;
+    border-radius: 12px;
+    height: 24px;
+}
+.status-support-primary{
+    background-color: var(--blue-light);
+}
+.status-support-orange{
+    background-color: #FEC400;
+}
+.status-support-green{
+    background-color: #29CC97;
+}
+.status-support-red{
+    background-color: #FF564E;
+}

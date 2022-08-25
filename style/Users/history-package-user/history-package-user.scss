@@ -22,10 +22,10 @@
       padding-left: 30px;
       th{
         color: var(--gray);
-        span{
-          display: flex;
-          gap: 6px;
-        }
+        //span{
+        //  display: flex;
+        //  gap: 6px;
+        //}
       }
       td,th{
         border-bottom: 1px solid #DFE0EB;
@@ -42,6 +42,10 @@
         background-color: #F7F8FF;
         cursor: pointer;
         z-index: -1;
+      }
+      tr:not(:last-child) > th:nth-last-child(-n+2),td:nth-last-child(-n+2) > div{
+        text-align: center;
+        margin: 0 auto;
       }
       .td-bold{
         font-weight: 500;
