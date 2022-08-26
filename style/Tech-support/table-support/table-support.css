@@ -1,15 +1,3 @@
-.Main-support-table__content {
-  margin-top: 69px;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  border: 1px solid #DFE0EB;
-}
-.Main-support-table__content-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 30px 42px 30px;
-}
 .Main-support-table__content-table {
   width: 100%;
 }
@@ -34,10 +22,13 @@
 .Main-support-table__content-table table td {
   height: 91px;
 }
-.Main-support-table__content-table table tr:not(:last-child) td:last-child {
-  display: flex;
-  gap: 5px;
-  align-items: center;
+.Main-support-table__content-table table tr:not(:last-child) > td:nth-child(4) span:first-child, .Main-support-table__content-table table td:nth-child(5) span:first-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Main-support-table__content-table table tr:not(:last-child) > td:nth-child(4) span:last-child, .Main-support-table__content-table table td:nth-child(5) span:last-child {
+  color: var(--gray-light);
+  font-weight: 400;
 }
 .Main-support-table__content-table table tr:hover:not(:last-child), .Main-support-table__content-table table tr:hover:not(td:last-child) {
   background-color: #F7F8FF;
@@ -46,6 +37,59 @@
 }
 .Main-support-table__content-table table .td-bold {
   font-weight: 500;
+}
+.Main-support-table__content-sort-date {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 234px;
+  padding: 14px 11px 14px 17px;
+}
+.Main-support-table__content-sort-date-input {
+  display: flex;
+  gap: 6px;
+}
+.Main-support-table__content-sort-date-input div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.Main-support-table__content-sort-date-input div input {
+  height: 26px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.Main-support-table__content-sort-button {
+  display: flex;
+  gap: 16px;
+}
+.Main-support-table__content-sort-button button {
+  height: 26px;
+  border-radius: 4px;
+}
+.Main-support-table__content-sort-status {
+  width: 148px;
+}
+.Main-support-table__content-sort-status-list li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.Main-support-table__content-sort-status-list li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.Main-support-table__content-sort-status-list li {
+  height: 26px;
+  padding: 6px 0px 6px 14px;
+}
+.Main-support-table__content-sort-status-list li span {
+  color: black;
+}
+.Main-support-table__content-sort-status-list li:hover {
+  background-color: var(--blue-light);
+}
+.Main-support-table__content-sort-status-list li:hover span {
+  color: white;
 }
 
 /*# sourceMappingURL=table-support.css.map */

@@ -17,6 +17,7 @@
 }
 .Main-support-client-chat__question-ask {
   width: 100%;
+  overflow: hidden;
 }
 .Main-support-client-chat__question-ask .blog_textEditorWrapper {
   margin-top: 50px;

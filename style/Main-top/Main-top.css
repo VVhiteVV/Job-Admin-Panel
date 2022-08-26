@@ -1,8 +1,23 @@
+.Main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 30px 10px 30px;
+  overflow: hidden;
+}
 .Main__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 34px;
+  align-items: flex-start;
+}
+.Main__top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.Main__top-left a {
+  display: flex;
+  gap: 2px;
+  color: var(--blue-light);
 }
 .Main__top-right, .Main__top-right-info {
   display: flex;
@@ -18,6 +33,40 @@
 }
 .Main__top-right-user-name span:last-child {
   color: var(--gray);
+}
+.Main__content {
+  margin-top: 69px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #DFE0EB;
+}
+.Main__content-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px 42px 30px;
+}
+.Main__content-top-search {
+  display: flex;
+  gap: 30px;
+}
+.Main__content-top-btn-add {
+  background-color: var(--blue-light);
+  color: var(--white);
+}
+.Main__content-top-btn-import {
+  background-color: var(--green);
+  color: var(--white);
+}
+.Main__content-top-search > div {
+  width: 224px;
+  position: relative;
+}
+.Main__content-top-search > div input {
+  width: 100%;
+}
+.Main__content-top-search > div input::placeholder {
+  color: var(--gray-light);
 }
 
 /*# sourceMappingURL=Main-top.css.map */

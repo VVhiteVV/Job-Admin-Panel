@@ -1,24 +1,8 @@
-.Main-new-administrator-form__content {
-  margin-top: 69px;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  border: 1px solid #DFE0EB;
-}
-.Main-new-administrator-form__content-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 30px 42px 30px;
-}
-.Main-new-administrator-form__content-top-search {
-  display: flex;
-  gap: 30px;
-}
-.Main-new-administrator-form__content-form-company {
+.Main-new-administrator-form__content-form-admin {
   padding-left: 30px;
   height: 720px;
 }
-.Main-new-administrator-form__content-form-company-inner {
+.Main-new-administrator-form__content-form-admin-inner {
   display: flex;
   gap: 24px;
 }

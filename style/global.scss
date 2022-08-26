@@ -1,22 +1,22 @@
 @import "sideBar-menu/sideBar-menu";
 @import "custom-select";
-@import "Packages/new-packages/new-packages";
-@import "Packages/table-packages/table-packages";
-@import "Users/tabel-user/tabel-user";
-@import "Users/import-user/import-user";
-@import "Users/new-user/new-user";
-@import "Users/history-package-user/history-package-user";
-@import "Users/history-documents-user/history-documents-user";
-@import "Company/table-company/table-company";
-@import "Company/new-company/new-company";
-@import "Administrator/table-administrator/table-administrator";
-@import "Administrator/new-administrator/new-administrator";
-@import "Activity/table-activity/table-activity";
-@import "Tech-support/table-support/table-support";
-@import "Tech-support/support-chat/support-chat";
-@import "Tech-support-client/index-support-chat/index-support-chat";
-@import "Tech-support-client/client-support-chat/client-support-chat";
-@import "Main-top/Main-top";
+@import "Packages/new-packages/new-packages.css";
+@import "Packages/table-packages/table-packages.css";
+@import "Users/tabel-user/table-user.css";
+@import "Users/import-user/import-user.css";
+@import "Users/new-user/new-user.css";
+@import "Users/history-package-user/history-package-user.css";
+@import "Users/history-documents-user/history-documents-user.css";
+@import "Company/table-company/table-company.css";
+@import "Company/new-company/new-company.css";
+@import "Administrator/table-administrator/table-administrator.css";
+@import "Administrator/new-administrator/new-administrator.css";
+@import "Activity/table-activity/table-activity.css";
+@import "Tech-support/table-support/table-support.css";
+@import "Tech-support/support-chat/support-chat.css";
+@import "Tech-support-client/index-support-chat/index-support-chat.css";
+@import "Tech-support-client/client-support-chat/client-support-chat.css";
+@import "Main-top/Main-top.css";
 @import "redactor/richText_editor.css";
 @import "checkbox.css";
 @import "icon.css";
@@ -39,12 +39,10 @@ body{
   background-color: #ffffff;
   font-family: 'Geometria';
   position: relative;
-  width: 100%;
   color: var(--black);
   min-height: 100vh;
 }
 .wrapper{
-  width: 100%;
   display: flex;
   min-height: 100vh;
 }

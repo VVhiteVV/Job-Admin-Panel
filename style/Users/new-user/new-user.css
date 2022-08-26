@@ -1,3 +1,27 @@
+.Main-new-user-form__content-form-users {
+  padding-left: 30px;
+  height: 720px;
+}
+.Main-new-user-form__content-form-users-inner {
+  display: grid;
+  grid-template-columns: 344px 344px 344px 344px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b c d" "e f f u";
+  gap: 40px;
+}
+.Main-new-user-form__content-form-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+}
 
+@media only screen and (max-width: 760px) {
+  .Main-new-user-form__content-form-user-inner {
+    display: grid;
+    grid-template-columns: 344px 344px 344px;
+    grid-template-areas: "a b c" "d e f";
+  }
+}
 
 /*# sourceMappingURL=new-user.css.map */

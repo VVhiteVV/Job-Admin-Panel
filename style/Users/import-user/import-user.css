@@ -1,115 +1,44 @@
-.Main-user-table__content {
-  margin-top: 69px;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  border: 1px solid #DFE0EB;
-}
-.Main-user-table__content-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 30px 42px 30px;
-}
-.Main-user-table__content-top-search {
-  display: flex;
-  gap: 30px;
-}
-.Main-user-table__content-top-btn-add {
-  background-color: var(--blue-light);
-  color: var(--white);
-}
-.Main-user-table__content-top-btn-import {
-  background-color: var(--green);
-  color: var(--white);
-}
-.Main-user-table__content-top-search > div {
-  width: 224px;
-  position: relative;
-}
-.Main-user-table__content-top-search > div input {
+.Main-import-user-table__content-table {
   width: 100%;
 }
-.Main-user-table__content-top-search > div input::placeholder {
-  color: var(--gray-light);
-}
-.Main-user-table__content-table {
-  width: 100%;
-}
-.Main-user-table__content-table table {
+.Main-import-user-table__content-table table {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
   padding-left: 30px;
 }
-.Main-user-table__content-table table th {
+.Main-import-user-table__content-table table th {
   color: var(--gray);
 }
-.Main-user-table__content-table table th span {
+.Main-import-user-table__content-table table th span {
   display: flex;
   gap: 6px;
 }
-.Main-user-table__content-table table td, .Main-user-table__content-table table th {
+.Main-import-user-table__content-table table td, .Main-import-user-table__content-table table th {
   border-bottom: 1px solid #DFE0EB;
   width: 400px;
   padding-left: 30px;
 }
-.Main-user-table__content-table table td {
+.Main-import-user-table__content-table table td:first-child, .Main-import-user-table__content-table table th:first-child {
+  width: 100px;
+  text-align: center;
+}
+.Main-import-user-table__content-table table td {
   height: 91px;
 }
-.Main-user-table__content-table table tr:hover:not(:last-child) {
+.Main-import-user-table__content-table table tr:hover:not(:last-child) {
   background-color: #F7F8FF;
   cursor: pointer;
+  z-index: 1;
 }
-.Main-user-table__content-table table .td-bold {
+.Main-import-user-table__content-table table .td-bold {
   font-weight: 500;
 }
-.Main-user-table__content-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 81px;
-  padding-right: 24px;
-  width: 100%;
-  height: 100%;
-}
-.Main-user-table__content-pagination-select {
-  display: flex;
-  gap: 10px;
-}
-.Main-user-table__content-pagination-select span {
-  color: var(--gray);
-  font-weight: 400;
-}
-.Main-user-table__content-pagination-select select {
-  width: 50px;
-  border: none;
-  font-weight: 400;
-  color: #4B506D;
-}
-.Main-user-table__content-pagination-transition {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--gray);
-  font-weight: 400;
-}
-.Main-user-table__content-pagination-transition span {
-  font-weight: 400;
-}
-.Main-user-table__content-pagination-transition-arrows {
-  margin-left: 16px;
-}
-.Main-user-table__content-pagination-transition-arrows svg {
-  cursor: pointer;
-}
-.Main-user-table__content-pagination-transition-arrows svg:last-child {
-  transform: rotate(180deg);
-}
-.Main-user-table__content-icons {
+.Main-import-user-table__content-icons {
   display: flex;
   gap: 4px;
 }
-.Main-user-table__content-form-users {
+.Main-import-user-table__content-form-users {
   padding-left: 30px;
   height: 720px;
 }

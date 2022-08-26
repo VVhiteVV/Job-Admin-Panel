@@ -222,7 +222,13 @@ body { background: black; }
     padding: 15px 10px;
     font-size: 15px;
     outline: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width:none;
     line-height: 20px;
+}
+.editor_body::-webkit-scrollbar{
+    width: 0;
 }
  .border-radius-editor{
     border-radius: 12px 12px 0px 0px;
