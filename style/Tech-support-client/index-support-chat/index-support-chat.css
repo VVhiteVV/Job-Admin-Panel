@@ -6,7 +6,7 @@
     border: 1px solid #DFE0EB;
 }
 .Main-support-chat__content-message {
-    margin-top: 400px;
+
 }
 .Main-support-chat__content-list > li {
     border-top: 1px solid #DFE0EB;
@@ -83,5 +83,3 @@
     justify-content: flex-end;
     color: var(--gray);
 }
-
-/*# sourceMappingURL=index-support-chat.css.map */

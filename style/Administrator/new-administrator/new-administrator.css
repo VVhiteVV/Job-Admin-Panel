@@ -1,19 +1,28 @@
 .Main-new-administrator-form__content-form-admin {
-  padding-left: 30px;
-  height: 720px;
+    padding: 0px 30px 30px 30px;
 }
 .Main-new-administrator-form__content-form-admin-inner {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 .Main-new-administrator-form__content-form-item {
-  width: 344px;
+    width: 344px;
 }
 .Main-new-administrator-form__content-form-buttons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 24px;
-  margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 24px;
 }
 
-/*# sourceMappingURL=new-administrator.css.map */
+@media only screen and (max-width: 1500px) {
+    .Main-new-administrator-form__content-form-admin-inner{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .Main-new-administrator-form__content-form-item{
+        width: 100%;
+    }
+}
