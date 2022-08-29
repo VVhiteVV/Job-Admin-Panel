@@ -70,7 +70,7 @@ $(document).ready(function (){
 ///////////get data input checkbox-radio
    $('input[type=checkbox], input[type=radio]').on("click",function(){
 
-      if($(this).is(":checked")){
+      if($(this).is(":checked") && !$(this).parent().hasClass('checkbox-not-value')){
          let value = $(this).parent().find('span').text();
          $(this).val(value);
       }
@@ -108,3 +108,24 @@ function Modal(name,close){
 
    });
 }
+
+//////////////Drop-down window
+
+$('.Drop-down').on('click',function (){
+   let content = $(this).find('.Drop-down-content');
+   if(!content.is(":visible")){
+      content.fadeIn(300);
+   }
+   else{
+      content.fadeOut(300);
+   }
+   content.find('.Drop-down-close').on('click',function (event){
+      event.stopPropagation()
+      content.fadeOut(300);
+   })
+
+})
+
+$('.Drop-down-content').on('click',function (event){
+   event.stopPropagation();
+})

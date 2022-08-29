@@ -3,6 +3,7 @@
 }
 .Main-new-administrator-form__content-form-admin-inner {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .Main-new-administrator-form__content-form-item {

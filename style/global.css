@@ -487,10 +487,6 @@ span {
   position: relative;
 }
 
-.Drop-down:hover .Drop-down-content {
-  display: block;
-}
-
 .Drop-down-content {
   position: absolute;
   top: 100%;
