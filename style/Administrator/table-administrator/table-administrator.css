@@ -9,6 +9,7 @@
 }
 .Main-administrator-table__content-table table th {
     color: var(--gray);
+    padding-bottom: 14px;
 }
 .Main-administrator-table__content-table table th span {
     display: flex;
@@ -16,8 +17,7 @@
 }
 .Main-administrator-table__content-table table td, .Main-administrator-table__content-table table th {
     border-bottom: 1px solid #DFE0EB;
-    width: 400px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .Main-administrator-table__content-table table td {
     height: 91px;
@@ -38,4 +38,14 @@
 .Main-administrator-table__content-icons {
     display: flex;
     gap: 4px;
+}
+
+.Main-administrator-table__content-table table .td-one{
+    width: 222px;
+}
+.Main-administrator-table__content-table table .td-two{
+    width: 310px;
+}
+.Main-administrator-table__content-table table .td-three{
+    width: 210px;
 }

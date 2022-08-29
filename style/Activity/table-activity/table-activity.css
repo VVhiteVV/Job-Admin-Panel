@@ -9,6 +9,7 @@
 }
 .Main-user-activity-table__content-table table th {
     color: var(--gray);
+    padding-bottom: 14px;
 }
 .Main-user-activity-table__content-table table th span {
     display: flex;
@@ -16,8 +17,7 @@
 }
 .Main-user-activity-table__content-table table td, .Main-user-activity-table__content-table table th {
     border-bottom: 1px solid #DFE0EB;
-    width: 400px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .Main-user-activity-table__content-table table td {
     height: 91px;
@@ -35,3 +35,20 @@
 .Main-user-activity-table__content-table table .td-bold {
     font-weight: 500;
 }
+
+.Main-user-activity-table__content-table table .td-one {
+    width: 225px;
+}
+.Main-user-activity-table__content-table table .td-two {
+    width: 334px;
+}
+.Main-user-activity-table__content-table table .td-three {
+    width: 208px;
+}
+.Main-user-activity-table__content-table table .td-four {
+    width: 288px;
+}
+.Main-user-activity-table__content-table table .td-five {
+    width: 300px;
+}
+

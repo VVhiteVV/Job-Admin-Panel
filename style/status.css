@@ -10,6 +10,7 @@
 .status-user-primary{
     background-color: var(--blue-light);
 }
+
 .status-user-orange{
     background-color: #FEC400;
 }
@@ -26,12 +27,24 @@
 .status-support-primary{
     background-color: var(--blue-light);
 }
+.status-support-primary::before{
+    content:'В обработке'
+}
 .status-support-orange{
     background-color: #FEC400;
+}
+.status-support-orange::before{
+    content:'В ожидании'
 }
 .status-support-green{
     background-color: #29CC97;
 }
+.status-support-green::before{
+    content:'Выполнен'
+}
 .status-support-red{
     background-color: #FF564E;
+}
+.status-support-red::before{
+    content:'Закрыт'
 }

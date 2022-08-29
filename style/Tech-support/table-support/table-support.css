@@ -9,6 +9,7 @@
 }
 .Main-support-table__content-table table th {
     color: var(--gray);
+    padding-bottom: 14px;
 }
 .Main-support-table__content-table table th span {
     display: flex;
@@ -16,8 +17,7 @@
 }
 .Main-support-table__content-table table td, .Main-support-table__content-table table th {
     border-bottom: 1px solid #DFE0EB;
-    width: 400px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 .Main-support-table__content-table table td {
     height: 91px;
@@ -90,4 +90,20 @@
 }
 .Main-support-table__content-sort-status-list li:hover span {
     color: white;
+}
+
+.Main-support-table__content-table table .td-one{
+    width: 132px;
+}
+.Main-support-table__content-table table .td-two{
+    width: 320px;
+}
+.Main-support-table__content-table table .td-three{
+    width: 595px;
+}
+.Main-support-table__content-table table .td-four{
+    width: 216px;
+}
+.Main-support-table__content-table table .td-five{
+    width: 154px;
 }

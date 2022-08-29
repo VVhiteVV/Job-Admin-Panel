@@ -1,72 +1,73 @@
 .Main {
-  width: 100%;
-  min-height: 100vh;
-  padding: 24px 30px 10px 30px;
-  overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px 30px 10px 30px;
+    overflow: hidden;
 }
 .Main__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .Main__top-left {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
 }
 .Main__top-left a {
-  display: flex;
-  gap: 2px;
-  color: var(--blue-light);
+    display: flex;
+    gap: 2px;
+    color: var(--blue-light);
 }
 .Main__top-right, .Main__top-right-info {
-  display: flex;
-  gap: 30px;
-  align-items: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 .Main__top-right-border {
-  border-left: 1px solid var(--black-light);
-  height: 34px;
+    border-left: 1px solid var(--black-light);
+    height: 34px;
 }
 .Main__top-right-user-name {
-  width: 190px;
+    width: 190px;
 }
 .Main__top-right-user-name span:last-child {
-  color: var(--gray);
+    color: var(--gray);
+}
+.Main__top-right-user-name span:first-child{
+    font-weight: 500;
 }
 .Main__content {
-  margin-top: 69px;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  border: 1px solid #DFE0EB;
+    margin-top: 69px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
 }
 .Main__content-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 30px 42px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 42px 30px;
 }
 .Main__content-top-search {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 .Main__content-top-btn-add {
-  background-color: var(--blue-light);
-  color: var(--white);
+    background-color: var(--blue-light);
+    color: var(--white);
 }
 .Main__content-top-btn-import {
-  background-color: var(--green);
-  color: var(--white);
+    background-color: var(--green);
+    color: var(--white);
 }
 .Main__content-top-search > div {
-  width: 224px;
-  position: relative;
+    width: 224px;
+    position: relative;
 }
 .Main__content-top-search > div input {
-  width: 100%;
+    width: 100%;
 }
 .Main__content-top-search > div input::placeholder {
-  color: var(--gray-light);
+    color: var(--gray-light);
 }
-
-/*# sourceMappingURL=Main-top.css.map */

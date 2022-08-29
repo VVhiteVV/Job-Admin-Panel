@@ -1,46 +1,61 @@
 .Main-import-user-table__content-table {
-  width: 100%;
+    width: 100%;
 }
 .Main-import-user-table__content-table table {
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-  padding-left: 30px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    padding-left: 30px;
 }
 .Main-import-user-table__content-table table th {
-  color: var(--gray);
+    color: var(--gray);
+    padding-bottom: 14px;
 }
 .Main-import-user-table__content-table table th span {
-  display: flex;
-  gap: 6px;
+    display: flex;
+    gap: 6px;
 }
 .Main-import-user-table__content-table table td, .Main-import-user-table__content-table table th {
-  border-bottom: 1px solid #DFE0EB;
-  width: 400px;
-  padding-left: 30px;
-}
-.Main-import-user-table__content-table table td:first-child, .Main-import-user-table__content-table table th:first-child {
-  width: 100px;
-  text-align: center;
+    border-bottom: 1px solid #DFE0EB;
+    padding-left: 50px;
 }
 .Main-import-user-table__content-table table td {
-  height: 91px;
+    height: 91px;
 }
 .Main-import-user-table__content-table table tr:hover:not(:last-child) {
-  background-color: #F7F8FF;
-  cursor: pointer;
-  z-index: 1;
+    background-color: #F7F8FF;
+    cursor: pointer;
+    z-index: 1;
 }
 .Main-import-user-table__content-table table .td-bold {
-  font-weight: 500;
+    font-weight: 500;
 }
 .Main-import-user-table__content-icons {
-  display: flex;
-  gap: 4px;
+    display: flex;
+    gap: 4px;
 }
 .Main-import-user-table__content-form-users {
-  padding-left: 30px;
-  height: 720px;
+    padding-left: 30px;
+    height: 720px;
 }
 
-/*# sourceMappingURL=import-user.css.map */
+
+.Main-import-user-table__content-table table .td-one{
+    width: 100px;
+    text-align: center;
+}
+.Main-import-user-table__content-table table .td-two{
+    width: 210px;
+}
+.Main-import-user-table__content-table table .td-three{
+    width: 334px;
+}
+.Main-import-user-table__content-table table .td-four{
+    width: 208px;
+}
+.Main-import-user-table__content-table table .td-five{
+    width: 288px;
+}
+.Main-import-user-table__content-table table .td-six{
+
+}
