@@ -64,7 +64,13 @@
 .Main-registry-specification-table__content-table table td:nth-child(2),.Main-registry-specification-table__content-table table th:nth-child(2){
     width: 194px;
 }
+.Main-registry-specification-table__content-table table td:nth-child(3),.Main-registry-specification-table__content-table table th:nth-child(3){
+    padding-right: 15px;
+}
 
 .Main-registry-values-table__content-table table td:nth-child(1),.Main-registry-values-table__content-table table th:nth-child(1){
     width: 400px;
+}
+.Main-registry-values-table__content-table table td:nth-child(2),.Main-registry-values-table__content-table table th:nth-child(2){
+    padding-right: 30px;
 }
