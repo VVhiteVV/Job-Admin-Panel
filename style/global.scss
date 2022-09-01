@@ -1,4 +1,4 @@
-@import "sideBar-menu/sideBar-menu";
+@import "sideBar-menu/sideBar-menu.css";
 @import "custom-select";
 @import "Packages/new-packages/new-packages.css";
 @import "Packages/table-packages/table-packages.css";
@@ -16,6 +16,13 @@
 @import "Tech-support/support-chat/support-chat.css";
 @import "Tech-support-client/index-support-chat/index-support-chat.css";
 @import "Tech-support-client/client-support-chat/client-support-chat.css";
+@import "Registry/company/registry-table-company.css";
+@import "Registry/company/registry-new-company.css";
+@import "Registry/specification/registry-table-specification.css";
+@import "Registry/company-product-position/table-company-product-position.css";
+@import "Registry/company-product-position/registry-new-product.css";
+@import "Registry/product-position/product-position.css";
+@import "Registry/registry-menu.css";
 @import "Main-top/Main-top.css";
 @import "redactor/richText_editor.css";
 @import "checkbox.css";
@@ -67,7 +74,14 @@ body{
 *{
   box-sizing: border-box;
   font-family: 'Geometria';
+  scrollbar-width:none;
 }
+*::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  display: none;
+}
+
 
 a{
   display: block;
@@ -92,6 +106,7 @@ input{
   font-size: 14px;
   line-height: 18px;
   width: 100%;
+  background-color: #FCFDFE;
 }
 input[type=date]::-webkit-calendar-picker-indicator{
   background: url("../public/calendar.svg");
@@ -272,4 +287,38 @@ span{
   border-radius: 4px;
   border: 1px solid #DFE0EB;
   display: none;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  padding-left: 30px;
+}
+table th {
+  color: var(--gray);
+  padding-bottom: 14px;
+}
+ table td, table th {
+  border-bottom: 1px solid #DFE0EB;
+  padding-left: 50px;
+}
+ table td {
+  height: 91px;
+}
+ table tr:hover:not(:last-child),  table tr:hover:not(td:last-child) {
+  background-color: #F7F8FF;
+  cursor: pointer;
+  z-index: -1;
+}
+table td:first-child, table th:first-child {
+  padding-left: 30px;
+}
+table th span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+table .td-bold {
+  font-weight: 500;
 }

@@ -57,12 +57,12 @@ $(document).ready(function (){
    HiddenCall(true);
 
    function Hidden(name,state){
-      let tr = $(`.${name} table tr:not(:last-child) td:last-child, .${name} table tr:not(:last-child) th:last-child`);
+      let tr = $(`.${name} table tr:not(:last-child)`);
       if(state){
-         tr.fadeOut(0)
+         tr.find('.column-hide').fadeOut(0)
       }
       else{
-         tr.fadeIn(300)
+         tr.find('.column-hide').fadeIn(300)
       }
    }
 
@@ -81,23 +81,27 @@ $(document).ready(function (){
 
 
 /////////href-hover-effect
-      $('.sideBar-menu__list li a span').each(function () {
+      $('.href-item').each(function () {
          let location = $('.href-hover').text()
          if(location === $(this).text()) {
-            $(this).parent().parent().addClass('sideBar-menu__item-active');
+            $(this).parents('.sideBar-menu__item').addClass('sideBar-menu__item-active');
+            $(this).parents('.Registry__item').addClass('Registry__item-active');
          }
-         console.log($(this).text() + '<\br>' + location)
       });
-
 })
-
 
 ///////////Modal window
 function Modal(name,close){
    let modal = $(`.${name}`)
-   modal.fadeIn(300).css({
-      'display': 'flex'
-   })
+   if(modal.is(":visible")){
+      modal.fadeOut(300);
+   }
+   else{
+      modal.fadeIn(300).css({
+         'display': 'flex'
+      })
+   }
+
    $(`.${close}`).click(function(){
       modal.fadeOut(300)
    })
@@ -128,4 +132,11 @@ $('.Drop-down').on('click',function (){
 
 $('.Drop-down-content').on('click',function (event){
    event.stopPropagation();
+})
+
+////////////Horizontal scroll
+
+$('.horizontal-scroll').bind('mousewheel DOMMouseScroll',function(event){
+   this.scrollLeft -= event.originalEvent.wheelDelta;
+   event.preventDefault();
 })

@@ -1,39 +1,14 @@
 .Main-administrator-table__content-table {
     width: 100%;
 }
-.Main-administrator-table__content-table table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    padding-left: 30px;
-}
-.Main-administrator-table__content-table table th {
-    color: var(--gray);
-    padding-bottom: 14px;
-}
 .Main-administrator-table__content-table table th span {
     display: flex;
     gap: 6px;
-}
-.Main-administrator-table__content-table table td, .Main-administrator-table__content-table table th {
-    border-bottom: 1px solid #DFE0EB;
-    padding-left: 50px;
-}
-.Main-administrator-table__content-table table td {
-    height: 91px;
 }
 .Main-administrator-table__registry {
     display: flex;
     gap: 5px;
     align-items: center;
-}
-.Main-administrator-table__content-table table tr:hover:not(:last-child), .Main-administrator-table__content-table table tr:hover:not(td:last-child) {
-    background-color: #F7F8FF;
-    cursor: pointer;
-    z-index: -1;
-}
-.Main-administrator-table__content-table table .td-bold {
-    font-weight: 500;
 }
 .Main-administrator-table__content-icons {
     display: flex;

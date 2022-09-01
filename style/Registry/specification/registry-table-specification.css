@@ -1,0 +1,70 @@
+.Main-registry-tables{
+    display: flex;
+    gap: 50px;
+}
+.Main-registry-specification__content,.Main-registry-values__content {
+    width: 700px;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+}
+.Main-registry-values__content{
+    width: 600px;
+}
+.Main-registry-specification__content-top,.Main-registry-values__content-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 42px 30px;
+}
+.Main-registry-values__content-top{
+    padding-bottom: 57px;
+}
+.Main-registry-specification__content-top-search,.Main-registry-values__content-top-search {
+    display: flex;
+    gap: 30px;
+}
+
+.Main-registry__specification-add,.Main-registry__values-add{
+    position: absolute;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(54, 55, 64, 0.6);
+}
+.Main-registry__specification-add-modal,.Main-registry__values-add-modal {
+    width: 428px;
+    padding: 58px 42px 58px 42px;
+    border-radius: 20px;
+    background-color: white;
+}
+.Main-registry__specification-add-modal h2,.Main-registry__values-add-modal h2{
+    margin: 0px 0px 46px 0px;
+}
+.Main-registry__specification-add-modal form,.Main-registry__values-add-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.Main-registry__specification-button,.Main-registry__values-button{
+    display: flex;
+    gap: 24px;
+}
+
+
+.Main-registry-values-table__content-table tr:not(:last-child) th:last-child span,.Main-registry-values-table__content-table tr:not(:last-child) td:last-child  div{
+    margin: 0 auto;
+    text-align: center;
+}
+.Main-registry-specification-table__content-table table td:nth-child(1),.Main-registry-specification-table__content-table table th:nth-child(1){
+    width: 288px;
+}
+.Main-registry-specification-table__content-table table td:nth-child(2),.Main-registry-specification-table__content-table table th:nth-child(2){
+    width: 194px;
+}
+
+.Main-registry-values-table__content-table table td:nth-child(1),.Main-registry-values-table__content-table table th:nth-child(1){
+    width: 400px;
+}

@@ -1,45 +1,38 @@
 .Main-history-documents-table__content-table {
-  width: 100%;
-}
-.Main-history-documents-table__content-table table {
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-  padding-left: 30px;
-}
-.Main-history-documents-table__content-table table th {
-  color: var(--gray);
+    width: 100%;
 }
 .Main-history-documents-table__content-table table th span {
-  display: flex;
-  gap: 6px;
-}
-.Main-history-documents-table__content-table table td, .Main-history-documents-table__content-table table th {
-  border-bottom: 1px solid #DFE0EB;
-  width: 400px;
-  padding-left: 30px;
+    display: flex;
+    gap: 6px;
 }
 .Main-history-documents-table__content-table table tr:not(:last-child) > th:nth-last-child(-n+2) span, .Main-history-documents-table__content-table table tr:not(:last-child) > td:nth-last-child(-n+2) span {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 .Main-history-documents-table__content-table table tr:not(:last-child) > th:nth-last-child(-n+2) div, .Main-history-documents-table__content-table table tr:not(:last-child) > td:nth-last-child(-n+2) div {
-  margin: 0 auto;
-}
-.Main-history-documents-table__content-table table td {
-  height: 91px;
-}
-.Main-history-documents-table__content-table table tr:hover:not(:last-child), .Main-history-documents-table__content-table table tr:hover:not(td:last-child) {
-  background-color: #F7F8FF;
-  cursor: pointer;
-  z-index: -1;
-}
-.Main-history-documents-table__content-table table .td-bold {
-  font-weight: 500;
+    margin: 0 auto;
+
 }
 .Main-history-documents-table__content-icons {
-  display: flex;
-  gap: 4px;
+    display: flex;
+    gap: 4px;
 }
 
-/*# sourceMappingURL=history-documents-user.css.map */
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(1),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(1){*/
+/*    width: 132px;*/
+/*}*/
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(2),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(2){*/
+/*    width: 262px;*/
+/*}*/
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(3),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(3){*/
+/*    width: 290px;*/
+/*}*/
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(4),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(4){*/
+/*    width: 168px;*/
+/*}*/
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(5),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(5){*/
+/*    width: 124px;*/
+/*}*/
+/*.Main-history-documents-table__content-table table tr:not(:last-child) td:nth-child(6),.Main-history-documents-table__content-table table tr:not(:last-child) th:nth-child(6){*/
+/*    width: 90px;*/
+/*}*/

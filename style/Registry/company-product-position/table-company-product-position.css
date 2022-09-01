@@ -1,0 +1,62 @@
+.Main-registry-tables{
+    display: flex;
+    gap: 50px;
+}
+.Main-registry-company-product-position__content{
+    width: 1040px;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+}
+.Main-registry-company-product__content{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+    flex-direction: column;
+    display: none;
+}
+.Main-registry-company-product-position__content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1040px;
+    padding: 25px 30px 42px 30px;
+}
+.Main-registry-company-product__content-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 57px 30px;
+}
+.Main-registry-company-product-position__content-top-search{
+    display: grid;
+    grid-template-columns: 344px 198px 224px ;
+    gap: 30px;
+}
+
+.Main-registry-company-product-position-table__content-table table{
+    width: 100%;
+}
+.Main-registry-company-product-table__content-table tr:not(:last-child) td:first-child > span {
+    display: inline-block;
+    color: var(--gray);
+}
+
+.Main-registry-company-product-table__content-table tr:not(:last-child) th:last-child span,.Main-registry-company-product-table__content-table tr:not(:last-child) td:last-child  div{
+    margin: 0 auto;
+    text-align: center;
+}
+.Main-registry-company-product-position-table__content-table table td:nth-child(1),.Main-registry-company-company-product-position-table__content-table table th:nth-child(1){
+    width: 220px;
+}
+.Main-registry-company-product-position-table__content-table table td:nth-child(2),.Main-registry-company-company-product-position-table__content-table table th:nth-child(2){
+    width: 290px;
+}
+
+.Main-registry-company-product-position-table__content-table table td:nth-child(1),.Main-registry-values-table__content-table table th:nth-child(1){
+    width: 220px;
+}
+.Main-registry-company-product-position-table__content-table table td:nth-child(2),.Main-registry-values-table__content-table table th:nth-child(2){
+    width: 108px;
+}

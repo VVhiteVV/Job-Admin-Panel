@@ -1,41 +1,13 @@
 .Main-user-table__content-table {
     width: 100%;
 }
-.Main-user-table__content-table table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    padding-left: 30px;
-}
-.Main-user-table__content-table table th {
-    color: var(--gray);
-    padding-bottom: 14px;
-}
-.Main-user-table__content-table table th span {
-    display: flex;
-    gap: 6px;
-}
-.Main-user-table__content-table table td, .Main-user-table__content-table table th {
-    border-bottom: 1px solid #DFE0EB;
-    padding-left: 50px;
-}
+
 .Main-user-table__content-table table td:first-child{
     position: relative;
 }
 .Main-user-table__content-table table td:first-child > span{
     position: absolute;
     top: 20px;
-}
-.Main-user-table__content-table table td {
-    height: 91px;
-}
-.Main-user-table__content-table table tr:hover:not(:last-child), .Main-user-table__content-table table tr:hover:not(td:last-child) {
-    background-color: #F7F8FF;
-    cursor: pointer;
-    z-index: -1;
-}
-.Main-user-table__content-table table .td-bold {
-    font-weight: 500;
 }
 .Main-user-table__content-icons {
     display: flex;
@@ -124,20 +96,20 @@
 }
 
 .Main-user-table__content-table table .td-one{
-    width: 190px;
+    width: 180px;
 }
 .Main-user-table__content-table table .td-two{
-    width: 314px;
+    width: 334px;
 }
 .Main-user-table__content-table table .td-three{
-    width: 188px;
+    width: 208px;
 }
 .Main-user-table__content-table table .td-four{
-    width: 268px;
+    width: 200px;
 }
 .Main-user-table__content-table table .td-five{
-    width: 270px;
+    width: 300px;
 }
 .Main-user-table__content-table table .td-six{
-    width: 160px;
+    width: 230px;
 }

@@ -35,35 +35,13 @@
 .Main-packages-table__content-table {
     width: 100%;
 }
-.Main-packages-table__content-table table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    padding-left: 30px;
-}
-.Main-packages-table__content-table table th {
-    color: var(--gray);
-    padding-bottom: 14px;
-}
 .Main-packages-table__content-table table th span {
     display: flex;
     gap: 6px;
 }
-.Main-packages-table__content-table table td, .Main-packages-table__content-table table th {
-    border-bottom: 1px solid #DFE0EB;
-    padding-left: 50px;
-}
-.Main-packages-table__content-table table td {
-    height: 91px;
-}
-.Main-packages-table__content-table table tr:hover:not(:last-child) {
-    background-color: #F7F8FF;
-    cursor: pointer;
-}
 .Main-packages-table__content-table table .td-bold {
     font-weight: 500;
 }
-
 
 .Main-packages-table__content-table table .td-one{
     width: 148px;

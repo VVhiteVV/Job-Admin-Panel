@@ -1,0 +1,49 @@
+.Main-registry-new-product-form__content-form-company {
+    padding: 0px 30px 30px 30px;
+}
+.Main-registry-new-product-form__content-form-company-inner {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.Main-registry-new-product-form__content-form-company-inner > div {
+
+}
+.Main-registry-new-product-form__content-form-company-inner > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.Main-registry-new-product-form__content-form-company-inner > div:first-child div:nth-child(5) {
+    width: 100%;
+}
+.Main-registry-new-product-form__content-form-company-inner > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.Main-registry-new-product-form__content-form-company-inner > div:last-child div:nth-child(5) {
+    width: 100%;
+}
+.Main-registry-new-product-form__content-form-item {
+    width: 344px;
+}
+.Main-registry-new-product-form__content-form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/*@media only screen and (max-width: 1850px) {*/
+/*    .Main-registry-new-product-form__content-form-company-inner{*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
+
+@media only screen and (max-width: 1090px) {
+    .Main-registry-new-product-form__content-form-company-inner > div,.Main-registry-new-product-form__content-form-item{
+        width: 100%;
+    }
+}

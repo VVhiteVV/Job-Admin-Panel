@@ -1,0 +1,23 @@
+.Registry__menu{
+    width: 100%;
+    margin-bottom: 24px;
+}
+.Registry__list{
+    display: flex;
+    gap: 16px;
+}
+.Registry__item{
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+.Registry__item > a{
+    color: var(--gray);
+    padding: 6px 18px 6px 18px;
+}
+
+.Registry__item-active{
+    background-color: var(--blue-light);
+}
+.Registry__item-active > a {
+    color: white;
+}

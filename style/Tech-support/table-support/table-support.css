@@ -1,16 +1,6 @@
 .Main-support-table__content-table {
     width: 100%;
 }
-.Main-support-table__content-table table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    padding-left: 30px;
-}
-.Main-support-table__content-table table th {
-    color: var(--gray);
-    padding-bottom: 14px;
-}
 .Main-support-table__content-table table th span {
     display: flex;
     gap: 6px;
@@ -19,9 +9,6 @@
     border-bottom: 1px solid #DFE0EB;
     padding-left: 40px;
 }
-.Main-support-table__content-table table td {
-    height: 91px;
-}
 .Main-support-table__content-table table tr:not(:last-child) > td:nth-child(4) span:first-child, .Main-support-table__content-table table td:nth-child(5) span:first-child {
     font-size: 14px;
     font-weight: 500;
@@ -29,14 +16,6 @@
 .Main-support-table__content-table table tr:not(:last-child) > td:nth-child(4) span:last-child, .Main-support-table__content-table table td:nth-child(5) span:last-child {
     color: var(--gray-light);
     font-weight: 400;
-}
-.Main-support-table__content-table table tr:hover:not(:last-child), .Main-support-table__content-table table tr:hover:not(td:last-child) {
-    background-color: #F7F8FF;
-    cursor: pointer;
-    z-index: -1;
-}
-.Main-support-table__content-table table .td-bold {
-    font-weight: 500;
 }
 .Main-support-table__content-sort-date {
     display: flex;

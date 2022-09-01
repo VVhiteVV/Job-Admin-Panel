@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Редактирование администратора</title>
-    <title class="href-hover" >Администраторы</title>
+    <title>Добавление компании</title>
+    <title class="href-hover" >Компании</title>
     <link rel="stylesheet" type="text/css" href="../style/global.css">
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
@@ -70,7 +70,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.09V6.27L10.5 3L3 6.27V11.18C3 15.72 6.2 19.97 10.5 21C11.05 20.87 11.58 20.68 12.1 20.45C13.18 21.99 14.97 23 17 23C20.31 23 23 20.31 23 17C23 14.03 20.84 11.57 18 11.09ZM11 17C11 17.56 11.08 18.11 11.23 18.62C10.99 18.73 10.75 18.84 10.5 18.92C7.33 17.92 5 14.68 5 11.18V7.58L10.5 5.18L16 7.58V11.09C13.16 11.57 11 14.03 11 17ZM17 21C14.79 21 13 19.21 13 17C13 14.79 14.79 13 17 13C19.21 13 21 14.79 21 17C21 19.21 19.21 21 17 21Z" fill="#F7F8FC"/>
                             </svg>
                         </div>
-                        <span class="span-16 href-item" >Администраторы</span>
+                        <span class="span-16" >Администраторы</span>
                     </a>
 
                 </li>
@@ -106,7 +106,7 @@
 <section class="Main">
     <div class="Main__inner">
         <div class="Main__top">
-            <h2 class="span-24">Администраторы</h2>
+            <h2 class="span-24">Реестры</h2>
             <div class="Main__top-right">
                 <div class="Main__top-right-info">
                     <div class="Main__top-right-notification">
@@ -131,70 +131,202 @@
 
         <div class="Main__content">
             <div class="Main__content-top">
-                <h3 class="span-20" >Редактировать пользователя</h3>
+                <h3 class="span-20" >Редактировать компанию</h3>
             </div>
-            <form class="Main-new-administrator-form__content-form-admin">
-                   <div class="Main-new-administrator-form__content-form-admin-inner">
-                           <div class="Main-new-administrator-form__content-form-item">
+            <form class="Main-registry-new-company-form__content-form-company">
+                   <div class="Main-registry-new-company-form__content-form-company-inner">
+                           <div class="Main-registry-new-company-form__content-form-item">
                                <div class="form-item-select">
-                                   <span class="span-14">Введите Ф.И.О</span>
-                                   <input type="text" value="Тимофеев Антон Алексеевич">
-                               </div>
-                           </div>
-                           <div class="Main-new-administrator-form__content-form-item">
-                               <div class="form-item-select">
-                                   <span class="span-14">Введите e-mail</span>
-                                   <input type="text" value="anton@mail.ru">
-                               </div>
-                           </div>
-                           <div class="Main-new-administrator-form__content-form-item">
-                               <div class="form-item-select">
-                                   <span class="span-14">Введите пароль</span>
-                                   <input type="text" value="123123123">
-                               </div>
-                           </div>
-                           <div class="Main-new-administrator-form__content-form-item">
-                               <div class="form-item-select">
-                                   <span class="span-14">Выберите роль</span>
+                                   <span class="span-14">Федеральный округ</span>
                                    <div class="select">
                                        <div class="selected">Выберите</div>
-                                       <input type="hidden" class="select-input">
+                                       <input class="select-input" type="hidden">
                                        <ul class="select-list">
-                                           <li class="select-item">Профессиональный</li>
+                                           <li class="select-item">Да</li>
                                        </ul>
                                    </div>
                                </div>
                            </div>
-                       <!--                    В зависимости от роли добавлять этот item-->
-                       <div class="Main-new-administrator-form__content-form-item">
-                           <div class="form-item-select">
-                               <span class="span-14">Промышленное направление</span>
-                               <div class="multi-select" >
-                                   <div class="multi-selected" >Выберите</div>
-                                   <ul class="multi-select-list" >
-                                       <li class="multi-select-item form-item-select " >
-                                           <div>
-                                               <input class="checkbox" id="lol" type="checkbox">
-                                               <label for="lol"></label>
-                                               <span class="span-14" >Да</span>
-                                           </div>
-                                       </li>
-                                       <li class="multi-select-item form-item-select " >
-                                           <div>
-                                               <input class="checkbox" id="lols" type="checkbox">
-                                               <label for="lols"></label>
-                                               <span class="span-14" >Net</span>
-                                           </div>
-                                       </li>
-                                   </ul>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Регион</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
                                </div>
                            </div>
-                       </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Название компании</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Юридическое</span>
+                                   <input type="text" value="ООО Агросила-Коммерция">
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Статус</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">ИНН</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Холдинг</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Компартамент </span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Вид деятельности</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Промышленное направление</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Направление деятельности</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Мощность хранилищ, тыс.тонн</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Объем реализации</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Единица изм.объема</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Налоговые условия</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="Main-registry-new-company-form__content-form-item">
+                               <div class="form-item-select">
+                                   <span class="span-14">Логистика</span>
+                                   <div class="select">
+                                       <div class="selected">Выберите</div>
+                                       <input class="select-input" type="hidden">
+                                       <ul class="select-list">
+                                           <li class="select-item">Да</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+
                    </div>
-                <div class="Main-new-administrator-form__content-form-buttons">
-                    <a href="index.html" class="btn btn-cancel" >Отмена</a>
-                    <button class="btn btn-primary">Сохранить изменения</button>
-                    <button class="btn btn-danger">Удалить пользователя</button>
+                <div class="Main-registry-new-company-form__content-form-buttons">
+                    <a href="table-company.html" class="btn btn-cancel" >Отмена</a>
+                    <button class="btn btn-primary">Добавить компанию</button>
+                    <button class="btn btn-danger">Удалить компанию</button>
                 </div>
             </form>
         </div>
