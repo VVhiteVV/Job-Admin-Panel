@@ -142,6 +142,11 @@ $('.Drop-down-content').on('click',function (event){
 ////////////Horizontal scroll
 
 $('.horizontal-scroll').on('mousewheel DOMMouseScroll',function(event){
-   this.scrollLeft -= event.originalEvent.wheelDelta;
+   if(/Firefox/i.test(navigator.userAgent)){
+      this.scrollLeft += event.originalEvent.detail * 30;
+   }
+   else{
+      this.scrollLeft -= event.originalEvent.wheelDelta;
+   }
    event.preventDefault();
 })
