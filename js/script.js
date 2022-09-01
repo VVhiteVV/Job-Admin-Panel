@@ -79,16 +79,21 @@ $(document).ready(function (){
       }
    })
 
-
 /////////href-hover-effect
-      $('.href-item').each(function () {
-         let location = $('.href-hover').text()
-         if(location === $(this).text()) {
-            $(this).parents('.sideBar-menu__item').addClass('sideBar-menu__item-active');
-            $(this).parents('.Registry__item').addClass('Registry__item-active');
+   $('.href-item').each(function () {
+      let location = $('.href-hover');
+      let item = $(this);
+      location.each(function(){
+         if($(this).text() === item.text()) {
+            item.parents('.sideBar-menu__item').addClass('sideBar-menu__item-active');
+            item.parents('.Registry__item').addClass('Registry__item-active');
          }
-      });
+      })
+   });
+
+
 })
+
 
 ///////////Modal window
 function Modal(name,close){
@@ -136,7 +141,7 @@ $('.Drop-down-content').on('click',function (event){
 
 ////////////Horizontal scroll
 
-$('.horizontal-scroll').bind('mousewheel DOMMouseScroll',function(event){
+$('.horizontal-scroll').on('mousewheel DOMMouseScroll',function(event){
    this.scrollLeft -= event.originalEvent.wheelDelta;
    event.preventDefault();
 })

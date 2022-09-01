@@ -11,18 +11,28 @@
     margin: 22px 0px 0px 22px;
 }
 .sideBar-menu__menu {
-    margin-top: 21px;
-    width: 100%;
+    margin-top:21px;
 }
 .sideBar-menu__list {
     display: flex;
     flex-direction: column;
 }
+
 .sideBar-menu__item {
     width: 255px;
     height: 56px;
     cursor: pointer;
     border-left: 3px solid transparent;
+}
+.sideBar-menu__item-svg{
+    height: 24px;
+}
+.sideBar-menu__item:nth-child(7){
+    margin-bottom: 15px;
+}
+.sideBar-menu__menu-list-admin{
+    padding-top: 15px;
+    border-top: 2px solid #40414A;
 }
 .sideBar-menu__item a {
     display: flex;
