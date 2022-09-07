@@ -1,0 +1,18 @@
+.item-setting-content{
+  overflow: hidden;
+  right: 0%;
+  display: inline-block;
+  cursor: pointer;
+}
+.item-setting-item{
+  display: flex;
+  padding: 6px 14px 6px 14px;
+  color: var(--black);
+  width: 100%;
+  transition: 0.2s all;
+}
+.item-setting-item:hover{
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+}

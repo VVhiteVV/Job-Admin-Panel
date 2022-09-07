@@ -1,0 +1,41 @@
+.Main-pattern-gib-table .Main__content-top-search{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.Main-pattern-gib-table__content-table .th-flex{
+  display: flex;
+  gap: 17px;
+}
+.Main-pattern-gib-table__content-table td,.Main-pattern-gib-table__content-table th{
+  padding-left: 17px;
+}
+.Main-pattern-gib-table__content-table th:first-child,.Main-pattern-gib-table__content-table td:first-child {
+  padding-left: 53px;
+}
+.Main-pattern-gib-table__content-table th:last-child .btn-reverse{
+  display: none;
+}
+.Main-pattern-gib-table__content-table .td-one > .th-flex > span {
+  width:144px;
+}
+.Main-pattern-gib-table__content-table .td-two > .th-flex > span {
+  width:178px;
+}
+.Main-pattern-gib-table__content-table .td-three > .th-flex > span {
+  width:100px;
+}
+.Main-pattern-gib-table__content-table .td-four > .th-flex > span {
+  width:130px;
+}
+.Main-pattern-gib-table__content-table .td-five > .th-flex > span {
+  width:208px;
+}
+.Main-pattern-gib-table__content-table .td-six > .th-flex > span {
+  width:196px;
+}
+.Main-pattern-gib-table__content-table .td-seven > .th-flex > span {
+  width:138px;
+}
+.Main-pattern-gib-table__content-table .td-eight > .th-flex > span {
+  width:74px;
+}

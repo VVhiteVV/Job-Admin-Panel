@@ -1,0 +1,28 @@
+.Main-all-gib .Main__content-top-search{
+  display: grid;
+  grid-template-columns: 350px auto;
+}
+.Main-all-gib .Main__content-top-search > div {
+  width: 100%;
+}
+.Main-all-gib__content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(346px,1fr));
+  gap: 50px;
+  padding: 30px;
+}
+.Main-all-gib__content .item-setting-content{
+  width: 150px;
+}
+.Main-all-gib__content .item-setting-item:last-child{
+  border-top: 1px solid #EFEFF5;
+}
+.Main-all-gib__new-gib-modal > form {
+  display: grid;
+  gap: 36px;
+  margin-top: 46px;
+}
+.Main-all-gib__new-gib-modal textarea{
+  height: 76px;
+  padding: 10px 0px 0px 16px;
+}

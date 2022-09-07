@@ -39,7 +39,7 @@
     min-height: 100vh;
     background-color: rgba(54, 55, 64, 0.6);
 }
-.Main-user-table__package-add-modal, .Main-user-table__document-add-modal {
+.Main-user-table__package-add-modal.modal-inner, .Main-user-table__document-add-modal.modal-inner {
     width: 428px;
     padding: 58px 42px 58px 42px;
     border-radius: 20px;
@@ -57,7 +57,7 @@
     display: flex;
     gap: 24px;
 }
-.Main-user-table__package-load-modal, .Main-user-table__document-load-modal {
+.Main-user-table__package-load-modal.modal-inner, .Main-user-table__document-load-modal {
     width: 796px;
     height: 770px;
     background-color: white;

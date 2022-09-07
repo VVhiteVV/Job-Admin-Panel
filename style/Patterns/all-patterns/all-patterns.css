@@ -1,0 +1,63 @@
+.Main-all-patterns .Main__content-top-search{
+  display: grid;
+  grid-template-columns: 350px auto;
+}
+.Main-all-patterns .Main__content-top-search > div {
+  width: 100%;
+}
+.Main-all-patterns__content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(346px,1fr));
+  gap: 50px;
+  padding: 30px;
+}
+.Main-all-patterns__new-pattern-modal > form {
+  display: grid;
+  gap: 36px;
+  margin-top: 46px;
+}
+.Main-all-patterns__new-pattern-modal textarea{
+  height: 76px;
+  padding: 10px 0px 0px 16px;
+}
+.Main-all-patterns__modal-item{
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid var(--gray-light);
+  color: var(--gray-light);
+  padding: 3px 14px 3px 14px;
+  border-radius: 8px;
+}
+.Main-all-patterns__setting-pattern-modal form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+.Main-all-patterns__setting-pattern-modal .modal-inner {
+  width: 610px;
+}
+.Main-all-patterns__setting-item > div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+.Main-all-patterns__setting-item > span{
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.Main-all-patterns__modal-item.item-active {
+  border: 1px solid var(--blue-light);
+  border-radius: 8px;
+}
+.Main-all-patterns__modal-item.item-active > span {
+  color: var(--blue-light);
+  user-select: none;
+  cursor: pointer;
+}
+.Main-all-patterns__modal-item > input {
+  display: none;
+}

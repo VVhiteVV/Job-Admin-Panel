@@ -86,7 +86,7 @@ $(document).ready(function (){
       location.each(function(){
          if($(this).text() === item.text()) {
             item.parents('.sideBar-menu__item').addClass('sideBar-menu__item-active');
-            item.parents('.Registry__item').addClass('Registry__item-active');
+            item.parents('.Table__item').addClass('Table__item-active');
          }
       })
    });
@@ -149,4 +149,14 @@ $('.horizontal-scroll').on('mousewheel DOMMouseScroll',function(event){
       this.scrollLeft -= event.originalEvent.wheelDelta;
    }
    event.preventDefault();
+})
+
+
+////////////////////////////// swap column
+
+$('.btn-reverse').on('click',function(){
+   count = $('.btn-reverse').index($(this));
+   $('table tr').each(function(){
+      $(this).children(`:eq(${count+1})`).after($(this).children(`:eq(${count})`));
+   })
 })

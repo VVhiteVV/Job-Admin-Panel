@@ -22,12 +22,16 @@
 @import "Registry/company-product-position/table-company-product-position.css";
 @import "Registry/company-product-position/registry-new-product.css";
 @import "Registry/product-position/product-position.css";
-@import "Registry/registry-menu.css";
+@import "Patterns/all-patterns/all-patterns.css";
+@import "Patterns/table-pattern/table-pattern.css";
+@import "GIB/all-gib/all-gib.css";
+@import "table-menu.css";
 @import "Main-top/Main-top.css";
 @import "redactor/richText_editor.css";
 @import "checkbox.css";
 @import "icon.css";
 @import "status.css";
+@import "item-setting.css";
 :root{
   --black-light: #363740;
   --black:#252733;
@@ -96,7 +100,7 @@ h1,h2,h3,h4{
   margin: 0;
 }
 
-input{
+input,textarea{
   border: 1px solid #EBEDF0;
   border-radius: 8px;
   color: #4B506D;
@@ -137,7 +141,7 @@ select{
   background-size: 24px;
   padding-left: 54px;
 }
-input:focus,select:focus{
+input:focus,select:focus,textarea:focus{
   outline: none;
 }
 input::placeholder{
@@ -216,7 +220,10 @@ span{
   background-color: rgba(0,0,0,0);
   border: 1px solid red;
 }
-
+.btn-green{
+  background-color: var(--green);
+  color: var(--white);
+}
 .btn-file{
   width: 100%;
   border: 1px solid var(--blue-light);
@@ -232,6 +239,13 @@ span{
   input{
     display: none;
   }
+}
+
+.btn-back {
+  display: flex;
+  gap: 2px;
+  color: var(--blue-light);
+  cursor: pointer;
 }
 
 .pagination{
@@ -279,6 +293,7 @@ span{
 }
 .Drop-down{
   position: relative;
+  cursor: pointer;
 }
 .Drop-down-content{
   position: absolute;
@@ -321,4 +336,53 @@ table th span {
 }
 table .td-bold {
   font-weight: 500;
+}
+
+
+
+.modal{
+  position: absolute;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(54, 55, 64, 0.6);
+}
+.modal-inner{
+  width: 428px;
+  padding: 58px 42px 58px 42px;
+  border-radius: 20px;
+  background-color: white;
+}
+.modal-buttons{
+  display: flex;
+  gap: 24px;
+}
+.modal-buttons > button{
+  width: 100%;
+}
+
+
+.card{
+  min-height: 161px;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  padding: 25px 24px 28px 24px;
+}
+.card-title > span {
+  color: var(--gray-light);
+  margin-top: 5px;
+}
+.card-top-content{
+  display: flex;
+  justify-content: space-between;
+}
+.card-bottom-content > span {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.card-setting > .Drop-down-content {
+  top: 70%;
 }

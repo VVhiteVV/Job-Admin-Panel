@@ -30,22 +30,15 @@
 
         })
 
-        $('.checkbox-item').on('click',function (){
+///////////////Checkbox-item
+        $(`.checkbox-item-activate`).on('click',function (){
             let input = $(this).find('input[type=checkbox],input[type=radio]');
             if(!input.is(':checked')){
-                $(this).css({
-                    "background-color":"var(--blue-light)",
-                }).find('span').css({
-                    "color":"white"
-                })
+                $(this).addClass('item-active');
                 input.prop('checked',true).val($(this).find('span').text());
             }
             else{
-                $(this).css({
-                    "background-color":"white",
-                }).find('span').css({
-                    "color":"var(--gray)"
-                })
+                $(this).removeClass('item-active');
                 input.prop('checked',false).val(null);
             }
         })

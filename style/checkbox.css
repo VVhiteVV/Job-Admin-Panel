@@ -51,7 +51,7 @@
 .form-item-select{
     width: 100%;
 }
-.form-item-select span {
+.form-item-select > span {
     text-transform: uppercase;
     color: var(--gray);
 }

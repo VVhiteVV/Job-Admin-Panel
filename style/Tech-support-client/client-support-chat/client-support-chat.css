@@ -43,6 +43,7 @@
   cursor: pointer;
   height: 48px;
 }
+
 .Main-support-client-chat__question-list-item img {
   width: 18px;
   height: 18px;
@@ -152,5 +153,3 @@
 .Main-support-client-chat__message-date span {
   display: flex;
 }
-
-/*# sourceMappingURL=client-support-chat.css.map */
